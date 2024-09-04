@@ -2,6 +2,8 @@ import React from 'react'
 import ThemeHeader from './ElementComponents/ThemeHeader'
 import HomeSecOneText from './ElementComponents/HomeSecOneText'
 import ThemeButton from './ElementComponents/ThemeButton'
+import ServicesSlider from './HomeComponents/ServicesSlider'
+import ServicesSliderSlick from './HomeComponents/ServicesSliderSlick'
 
 const Section2 = () => {
   return (
@@ -19,7 +21,10 @@ const Section2 = () => {
     </div>
 </div>
     </div>
-    
+  <div className="main-bx-gray">
+  <ServicesSliderSlick/>  
+    </div>
+
     </div>
   )
 }

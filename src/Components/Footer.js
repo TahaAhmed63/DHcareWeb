@@ -1,5 +1,6 @@
 import React from 'react';
-
+import whitelogo from "./../assest/dhcare-logo-trans-white (1).png"
+import { Link } from 'react-router-dom';
 const Footer = () => {
   return (
     <footer id="colophon" className="site-footer max-limit">
@@ -7,7 +8,7 @@ const Footer = () => {
         <div className="row d-flex justify-content-center gy-2">
           <div className="col-md-12 d-flex justify-content-center py-2">
             <img
-              src="https://dhcare.youronlineconversation.com/wp-content/uploads/2024/08/dhcare-logo-trans-white.png"
+              src={whitelogo}
               alt="DHCARE Logo"
               style={{ width: '100px', height: 'auto' }}
             />
@@ -15,10 +16,10 @@ const Footer = () => {
 
           <div className="col-md-12 py-2">
             <div className="footer-link-wrap d-flex gap-5 justify-content-center text-white">
-              <a href="">Privacy Policy</a>
-              <a href="">Cookie Policy</a>
-              <a href="">FAQ's</a>
-              <a href="">Blog</a>
+              <Link to="">Privacy Policy</Link>
+              <Link to="">Cookie Policy</Link>
+              <Link to="">FAQ's</Link>
+              <Link to="">Blog</Link>
             </div>
           </div>
 
@@ -27,23 +28,23 @@ const Footer = () => {
           <div className="col-md-12 footer-link py-2">
             <div className="main-footerlink">
               <div className="d-flex gap-4 social-icons-wrap align-items-center">
-                <a href="tel:(758) 459-0180" className="det-open" target="_blank" rel="noopener noreferrer">
+                <Link to="tel:(758) 459-0180" className="det-open" target="_blank" rel="noopener noreferrer">
                   <i className="fa-solid fa-square-phone"></i>
                   <p className="social-hide mb-0 bg-white px-1">(758) 459-0180</p>
-                </a>
+                </Link>
 
-                <a className="mb-head-none" href="https://www.facebook.com/DHCareNY/" target="_blank" rel="noopener noreferrer">
+                <Link className="mb-head-none" to="https://www.facebook.com/DHCareNY/" target="_blank" rel="noopener noreferrer">
                   <i className="fa-brands fa-square-facebook"></i>
-                </a>
-                <a className="mb-head-none" href="https://www.linkedin.com/company/dhcare-ny-llc" target="_blank" rel="noopener noreferrer">
+                </Link>
+                <Link className="mb-head-none" to="https://www.linkedin.com/company/dhcare-ny-llc" target="_blank" rel="noopener noreferrer">
                   <i className="fa-brands fa-linkedin"></i>
-                </a>
-                <a className="mb-head-none" href="https://twitter.com/NyDhcare" target="_blank" rel="noopener noreferrer">
+                </Link>
+                <Link className="mb-head-none" to="https://twitter.com/NyDhcare" target="_blank" rel="noopener noreferrer">
                   <i className="fa-brands fa-square-x-twitter"></i>
-                </a>
-                <a className="mb-head-none" href="#" target="_blank" rel="noopener noreferrer">
+                </Link>
+                <Link className="mb-head-none" to="#" target="_blank" rel="noopener noreferrer">
                   <i className="fa-solid fa-envelope"></i>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -54,11 +55,11 @@ const Footer = () => {
 
           <div className="col-md-12 justify-content-end d-flex credit-tag">
             <p>
-              <a href="https://www.youronlineconversation.com/" target="_blank" rel="noopener noreferrer">
+              <Link to="https://www.youronlineconversation.com/" target="_blank" rel="noopener noreferrer">
                 Design By <span style={{ color: '#AD5DAB' }}>Y</span>
                 <span style={{ color: '#34BCED' }}>O</span>
                 <span style={{ color: '#79CA88' }}>C</span>
-              </a>
+              </Link>
             </p>
           </div>
         </div>

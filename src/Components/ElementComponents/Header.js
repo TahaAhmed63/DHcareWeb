@@ -110,7 +110,7 @@ console.log(showModal)
             </div>
           </div>
 
-          <div className="col-7 col-md-8 col-lg-7 d-flex justify-content-center     align-items-end mb-0">
+          <div className="col-7 col-md-8 col-lg-7 d-flex justify-content-end     align-items-end mb-0">
             <button
               className="mobile-menu-toggle"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}

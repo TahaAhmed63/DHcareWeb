@@ -115,23 +115,10 @@ const Header = () => {
               <i className="fa-solid fa-bars"></i>
             </button>
             <nav id="site-navigation" className={`main-navigation ${isMobileMenuOpen ? 'is-open' : ''}`}>
-              <ul className="d-flex  flex-lg-row menu-item-wrap">
+              <ul className="d-flex  flex-lg-row menu-item-wrap mb-0">
                 {navItems.map((item, index) => (
                   <li key={index}>
-                    <Link className='mega-menu-link' to={item.to} onClick={() => setIsMobileMenuOpen(false)}  onMouseEnter={(e) => {
-              gsap.to(e.target, {
-                duration: 0.2,
-                borderBottom: '2px solid rgb(168, 194, 148)',
-                color:'rgb(168, 194, 148)',
-              });
-            }}
-            onMouseLeave={(e) => {
-              gsap.to(e.target, {
-                duration: 0.2,
-                borderBottom: 'none',
-                color:'',
-              });
-            }}>{item.label}</Link>
+                    <Link className='mega-menu-link' to={item.to} onClick={() => setIsMobileMenuOpen(false)} >{item.label}</Link>
                   </li>
                 ))}
               </ul>

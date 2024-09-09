@@ -418,8 +418,15 @@ color:#000;
     font-size: 44px;
     font-weight: 400;
 }
+.site-header.logo-bg-remove a.mega-menu-link:hover {
+    color: #41d8bc !important;
+}
 .footer-link-wrap a:hover{
 	   color: #97b770;
+    transition: 0.8s linear;
+}
+#site-navigation .mega-menu-link:hover {
+    color: rgb(168, 194, 148);
     transition: 0.8s linear;
 }
 .socail-icons-wrap a:hover  i{

@@ -117,21 +117,45 @@ const BannerSlide = () => {
           </div>
         </SwiperSlide>
       </Swiper>
-        <style jsx>{`
-  .banner-container img {
-    filter: brightness(1);
-    transition: filter 0.5s ease-in-out;
-    object-fit: cover;
-    width: 100%;
-    height: 900px;
-    /* display: none; */
-}
-.banner-container img:hover {
-  filter: brightness(1.5);
-}
-  .cta
- 
-        `}</style>
+      <style jsx>{`
+                .banner-container img {
+                    filter: brightness(1);
+                    transition: filter 0.5s ease-in-out;
+                    object-fit: cover;
+                    width: 100%;
+                    height: 900px;
+                    /* display: none; */
+                }
+                .banner-container img:hover {
+                    filter: brightness(1.5);
+                }
+
+                /* Add responsive design tweaks */
+                @media only screen and (max-width: 768px) {
+                    .banner-container img {
+                        height: 500px;
+                    }
+                    .banner-text {
+                        font-size: 18px;
+                    }
+                    .cta-button {
+                        font-size: 16px;
+                        padding: 10px 20px;
+                    }
+                }
+                @media only screen and (max-width: 480px) {
+                     .banner-container img {
+        height: 100%;
+    }
+                    .banner-text {
+                        font-size: 14px;
+                    }
+                    .cta-button {
+                        font-size: 14px;
+                        padding: 8px 16px;
+                    }
+                }
+            `}</style>
     </div>
   );
 };

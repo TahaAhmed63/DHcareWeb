@@ -1608,22 +1608,20 @@ display:none ;
         
     }
     .single-page-bg-row {
-
-    background-image: url(https://dhcare.youronlineconversation.com/wp-content/uploads/2024/08/New-Project-45.webp?id=248) !important;
-    background-position: center !important;
-    /* background-color: #413050; */
-    height: 100% !important;
-    margin-top: 0px !important;
-    padding: 260px;
-    background-repeat: no-repeat !important;
-    flex-direction: row-reverse;
-    background-size: cover;
-}
-.small-text-main ul li {
-    font-size: 15px;
-    color: #fff;
-    line-height: 42px;
-}
+        background-image: url(https://dhcare.youronlineconversation.com/wp-content/uploads/2024/08/New-Project-45.webp?id=248) !important;
+        background-position: 50% !important;
+        background-repeat: no-repeat !important;
+        background-size: cover;
+        flex-direction: row-reverse;
+        height: 100% !important;
+        margin-top: 0 !important;
+        padding: 230px 0px;
+    }
+    .small-text-main ul li {
+        font-size: 12px;
+        color: #fff;
+        line-height: 25px;
+    }
     .mb-flex-reverse{
         flex-direction:column-reverse;
     }

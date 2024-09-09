@@ -996,7 +996,14 @@ color:#3f2b45;
 .singl-page-main-text h2 {
     color: #412949;
     font-size: 34px;
+    font-weight: 700;   
+}
+.main-pages.toppageheader .singl-page-main-text h2 {
+    color: #412949;
+    font-size: 34px;
+    top: 45px;
     font-weight: 700;
+    position: relative;
 }
 .singl-page-main-text p {
     color: #fff;

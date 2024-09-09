@@ -10,7 +10,7 @@ const ServicesSec5 = () => {
   <span style={{ color: "#97b670" }}>Need more details?</span>
 </h2>
 <p className='text-center'>Your local team of Client Care Managers are on call 24/7 to answer your questions and work with you to design a customized plan of care that is right for you.</p>
-      <div className="d-flex gap-2">
+      <div className="d-flex gap-2 my-4">
       <ThemeButton btnRadious={'0px !important'}btnText={'Contact us today'}/>
       <ThemeButton btnRadious={'0px !important'}btnText={'Request a Callback'}/>
 

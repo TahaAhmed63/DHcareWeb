@@ -8,7 +8,7 @@ const {bgimage,pagetitle}=props
 //   };
   return (
     <>
-    <section className="single-page-banner toppageheader main-pages" style={{background:`url(${bgimage})center/cover no-repeat` }}>
+    <section className="single-page-banner toppageheader main-pages max-limit" style={{background:`url(${bgimage})center/cover no-repeat` }}>
     <div
   className="singl-page-main-text"
   style={{ textAlign: "center", color: "white", padding: "100px 20px" }}

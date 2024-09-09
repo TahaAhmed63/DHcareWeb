@@ -5,6 +5,7 @@ import { Accordion, Card, Col, Row, useAccordionButton } from 'react-bootstrap';
 import { FaPlus, FaMinus } from 'react-icons/fa';
 
 import leftimg from "./../assest/caring-585x390-1.jpg"
+import { Helmet } from 'react-helmet-async';
 // Custom Toggle component for Accordion
 const CustomToggle = ({ children, eventKey, activeKey, onToggle }) => {
   const decoratedOnClick = useAccordionButton(eventKey, () => onToggle(eventKey));
@@ -67,6 +68,10 @@ const Faqs = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Faqs</title>
+        <meta name="description" content="Frequently Answer Question" />
+      </Helmet>
       <MainPagesBanner bgimage={bgimage} pagetitle={'Faqs'} />
 
 

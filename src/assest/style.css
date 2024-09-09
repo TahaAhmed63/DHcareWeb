@@ -465,8 +465,8 @@ color:#000;
 }
 .home-field-setting {
     background: transparent;
-    border-bottom: 1px solid #000 !important;
-    border-radius: 0px;
+    border-bottom: 1px solid #0000006e !important;
+        border-radius: 0px;
     border: 0px;
     border-top: none;
     outline: 0 !important;
@@ -1137,7 +1137,7 @@ ul {
 }
 .single-page-bg-1 .single-col-img .vc_column-inner {
     position: absolute;
-    top: -246px;
+    top: -234px;
 }
 .img-sec-wrap {
     position: relative;
@@ -1443,6 +1443,11 @@ font-size:15px;
    
     top: -156px;
     position: relative;
+}
+.toppageheader.main-pages{
+    top: -12px !important;
+    position: relative;
+
 }
 	.page-template-full-width .toppageheader{
 top:-10px !important;

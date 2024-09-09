@@ -3,7 +3,7 @@ import React from 'react'
 const Servicesbgsec = (props) => {
     const {bgimage,List1,List2,head1}=props
   return (
-  <section className="single-page-bg-row d-flex align-items-center flex-reverse" style={{backgroundImage:bgimage,}}>
+  <section className="single-page-bg-row d-flex align-items-center flex-reverse max-limit" style={{backgroundImage:bgimage,}}>
     <div className="container">
     <div className="row align-items-center flex-row-reverse">
     <div className="col-md-6 col-6">

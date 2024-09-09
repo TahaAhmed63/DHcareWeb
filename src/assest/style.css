@@ -1468,6 +1468,10 @@ top:-10px !important;
 
         
     }
+    .App {
+        width: 100%;
+        overflow: hidden;
+    }
     .banner-container{
         height: 370px !important;
     }

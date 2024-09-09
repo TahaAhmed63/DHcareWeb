@@ -207,6 +207,12 @@ const ServicesSliderSlick = () => {
     position: relative;
     right: 46px;
 }
+@media only screen and (max-width: 767px) {
+         .slick-slider.slick-initialized {
+    height: 100%;
+}          
+
+}
 
                    `}</style>
             </div>

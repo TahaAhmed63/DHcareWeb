@@ -1884,3 +1884,96 @@ font-size:12px;
   .cta-button:hover {
     background-color:#9ebd7b;; /* Darker color on hover */
   }
+
+
+  /* contact */
+  .singl-page-main-text h2 {
+    color: #412949;
+    font-size: 34px;
+    font-weight: 700;
+    position: relative;
+    top: 56px;
+}
+
+.logo-wrap:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    background: url(https://dhcare.youronlineconversation.com/wp-content/uploads/2024/08/Ellipse-6.webp);
+    width: 100%;
+    height: 255px;
+    left: 1px;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+input#gform_submit_button_4 {
+    background-color: #9ebd7b;
+    color: #fff;
+    border-radius: 8px;
+    font-size: 18px;
+    padding: 14px 47px;
+    border: 0px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.home-field-setting textarea {
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    outline: 0px;
+}
+
+.socail-links-contact i:hover {
+    color: #97b770;
+    transition: 0.8s linear;
+    animation: heartbeat 1s infinite;
+}
+
+.form-bg {
+    background-image: url(https://dhcare.youronlineconversation.com/wp-content/uploads/2024/08/Shape-1.png?id=126);
+    padding: 141px;
+    background-size: 100% 100%;
+    color: #fff;
+    margin-bottom: -45px;
+}
+
+.socail-links-contacts i {
+    font-size: 15px;
+}
+
+.Socail-box a {
+    font-size: 15px;
+}
+
+.Socail-box .vc_column-inner {
+    background: #8ed7d0a3;
+    margin-top: 22px;
+    margin-bottom: 22px;
+    padding: 20px;
+    width: 98%;
+    border-radius: 10px;
+    height: 200px;
+}
+
+.bx-shadow-bx .vc_column-inner {
+    box-shadow: 5px 5px 19px 11px #d3c8c8;
+    padding: 20px 47px 0px;
+    margin-top: 24px;
+}
+
+.contact-form form {
+    background: #fff;
+    box-shadow: -1px -1px 5px 9px #e5dddd;
+    padding: 47px 45px 11px 45px;
+}
+
+input#gform_submit_button_3 {
+    background-color: #9ebd7b;
+    color: #fff;
+    border-radius: 50px;
+    padding: 5px 47px;
+    border: 0px;
+    text-align: center;
+}   

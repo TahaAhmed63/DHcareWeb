@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import { FaGlobe, FaPhone, FaFacebookSquare, FaLinkedin, FaTwitterSquare, FaEnvelope } from 'react-icons/fa';
+import { FaGlobe, FaEnvelope } from 'react-icons/fa';
 // import './SocialSection.css'; // Custom CSS for additional styling
 
 const SocialSection = () => {
@@ -14,19 +14,29 @@ const SocialSection = () => {
             <div className="vc_icon_element vc_icon_element-outer vc_do_icon vc_icon_element-align-center vc_icon_element-have-style">
               <div
                 className="vc_icon_element-inner vc_icon_element-color-white vc_icon_element-have-style-inner vc_icon_element-size-lg vc_icon_element-style-rounded vc_icon_element-background"
-                style={{ backgroundColor: '#97b770' }}
+                style={{     backgroundColor: "rgb(151, 183, 112)",
+                  borderRadius: "100%",
+                  width: "100%",
+                  maxWidth: "50px",
+                  padding: "8px 0px",
+                  margin: "0px auto"}}
               >
-                <FaGlobe size={50} color="white" />
+                <FaGlobe size={30} color="white" />
               </div>
             </div>
             <h2>Social</h2>
-            <div className="d-flex gap-2 my-2 socail-icons-wrap align-items-center justify-content-center">
-              <FaPhone size={40} />
-              <FaFacebookSquare size={40} />
-              <FaLinkedin size={40} />
-              <FaTwitterSquare size={40} />
-              <FaEnvelope size={40} />
-            </div>
+            <div className="d-flex gap-2 socail-links-contact my-2 socail-icons-wrap align-items-center justify-content-center">
+  <i className="fa-solid fa-square-phone" />
+  <br />
+  <i className="fa-brands fa-square-facebook" />
+  <br />
+  <i className="fa-brands fa-linkedin" />
+  <br />
+  <i className="fa-brands fa-square-x-twitter" />
+  <br />
+  <i className="fa-solid fa-envelope" />
+</div>
+
           </div>
         </Col>
 
@@ -35,9 +45,14 @@ const SocialSection = () => {
             <div className="vc_icon_element vc_icon_element-outer vc_do_icon vc_icon_element-align-center vc_icon_element-have-style">
               <div
                 className="vc_icon_element-inner vc_icon_element-color-white vc_icon_element-have-style-inner vc_icon_element-size-lg vc_icon_element-style-rounded vc_icon_element-background"
-                style={{ backgroundColor: '#97b770' }}
+                style={{      backgroundColor: "rgb(151, 183, 112)",
+                  borderRadius: "100%",
+                  width: "100%",
+                  maxWidth: "50px",
+                  padding: "8px 0px",
+                  margin: "0px auto"}}
               >
-                <FaEnvelope size={50} color="white" />
+                <FaEnvelope size={30} color="white" />
               </div>
             </div>
             <h2>Email</h2>

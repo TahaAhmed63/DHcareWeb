@@ -16,8 +16,12 @@ import ContactUs from './pages/ContactUs';
 import Header from './Components/ElementComponents/Header';
 import Footer from './Components/ElementComponents/Footer';
 import Cursor from './Components/ElementComponents/Cursor';
+import { useLayoutEffect } from 'react';
 
 function App() {
+  useLayoutEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, []);
   return (
     <div className="App">
          <Cursor />

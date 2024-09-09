@@ -87,10 +87,11 @@ const ServicesSliderSlick = () => {
         infinite: true,
         speed: 500,
         slidesToShow: 4,
-        slidesToScroll: 1,
-        // centerMode: true,
+        slidesToScroll: 4,
+        // responsive:true,
+        centerMode: true,
         centerPadding: '0',
-        // autoplay: true,
+        autoplay: true,
         autoplaySpeed: 2000,
         pauseOnHover: true,
         nextArrow: <SampleNextArrow />,
@@ -107,14 +108,17 @@ const ServicesSliderSlick = () => {
                 breakpoint: 600,
                 settings: {
                     slidesToShow: 3,
+                    arrow:false,
+                    initialSlide: 3
                 },
             },
             {
                 breakpoint: 480,
                 settings: {
+                    arrow:false,
                     slidesToShow: 1,
-                    centerMode: false,
-                },
+                    slidesToScroll: 1
+                  }
             },
         ],
     };

@@ -1,6 +1,5 @@
 import React from 'react'
-import Header from '../Components/Header'
-import Footer from '../Components/Footer'
+
 import BannerSlide from '../Components/BannerSlide'
 import FormHome from '../Components/FormHome'
 import MyMapComponent from '../Components/ElementComponents/MyMapComponent'
@@ -12,8 +11,8 @@ import Section5 from '../Components/Section5'
 
 const Home = () => {
   return (
-  <>
-  <Header/>
+  <div className='max-limit'>
+
   <BannerSlide/>
   <FormHome/>
   <MyMapComponent/>
@@ -21,8 +20,8 @@ const Home = () => {
   <Section3/>
   <Section4/>
   <Section5/>
-  <Footer/>
-  </>
+
+  </div>
   )
 }
 

@@ -1,11 +1,12 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { EffectFade, Autoplay, Navigation, EffectCoverflow } from 'swiper/modules';
+import {  Autoplay, Navigation } from 'swiper/modules';
 import 'swiper/css'; // Import Swiper styles
 import 'swiper/css/effect-fade';
 import 'swiper/css/navigation';
 import 'swiper/css/effect-coverflow';
 import personimg from "./../../assest/New-Project-39.webp";
+import { Link } from 'react-router-dom';
 
 const TestimonialCarousel = () => {
   const services = [
@@ -36,13 +37,17 @@ const TestimonialCarousel = () => {
       navigation // Enables navigation arrows
     //   effect="coverflow" // Optional: Adds a coverflow effect
       modules={[Autoplay, Navigation]}
+      breakpoints={{
+        640: {  navigation:false },
+      
+      }}
     className='testimonial-carousel'
     >
 
       {services.map(service => (
         <SwiperSlide key={service.id}>
           <div className="testi-box">
-            <a href="#">
+            <Link to={''}>
               <img
                 loading="lazy"
                 decoding="async"
@@ -51,7 +56,7 @@ const TestimonialCarousel = () => {
                 src={service.image}
                 alt=""
               />
-            </a>
+            </Link>
             <div className="description">
               <p>{service.description}</p>
             </div>

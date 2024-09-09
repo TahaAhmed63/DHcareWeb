@@ -1,6 +1,7 @@
 import React from 'react';
-import whitelogo from "./../assest/dhcare-logo-trans-white (1).png"
+import whitelogo from "./../../assest/dhcare-logo-trans-white (1).png"
 import { Link } from 'react-router-dom';
+import BackToTop from './BacktoTop';
 const Footer = () => {
   return (
     <footer id="colophon" className="site-footer max-limit">
@@ -65,9 +66,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <button id="back-to-top" style={{ display: 'block' }}>
-        <i className="fa-solid fa-angle-up"></i>
-      </button>
+      <BackToTop/>
     </footer>
   );
 };

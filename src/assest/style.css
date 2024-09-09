@@ -1172,6 +1172,9 @@ ul {
     font-size: 14px;
     text-decoration: none;
 }
+ul.d-flex.menu-item-wrap li a {
+    padding: 0px 5px 0px 20px;
+}
 .content-wrap .pagestitle h2 {
 
     font-size: 18px !important;

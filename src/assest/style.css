@@ -83,7 +83,10 @@ h1 {
 body{
     font-family:'ubunto';
 }
-
+.App {
+    width: 100%;
+    overflow: hidden;
+}
 /* Header */
 .scroll-none{
     display: none;

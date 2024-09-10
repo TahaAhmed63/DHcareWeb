@@ -1165,16 +1165,16 @@ ul {
 }
 
 @media (min-width: 768px) and (max-width: 992px){
-.head-btn:nth-child(1) {
-    background: #41294a;
-    color: #fff;
-    padding: 4px 8px;
-    border-radius: 10px;
-    font-size: 14px;
-    text-decoration: none;
-}
+    .head-btn:nth-child(1) {
+        background: #41294a;
+        color: #fff;
+        padding: 2px 6px;
+        border-radius: 10px;
+        font-size: 14px;
+        text-decoration: none;
+    }
 ul.d-flex.menu-item-wrap li a {
-    padding: 0px 5px 0px 20px;
+    padding: 0px 10px 0px 10px;
 }
 .content-wrap .pagestitle h2 {
 
@@ -1468,6 +1468,28 @@ top:-10px !important;
 
         
     }
+    .head-btn:nth-child(1) {
+        background: #41294a;
+        color: #fff;
+        padding: 10px 7px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        width: 100%;
+        font-size: 9px;
+        text-decoration: none;
+        justify-content: center;
+        display: flex;
+    }
+    
+    .logo-wrap{
+        padding:0px !important;
+        
+    }
+    .logo-wrap {
+        padding: 0px !important ;
+        display: flex;
+        justify-content: flex-start;
+    }
     .App {
         width: 100%;
         overflow: hidden;
@@ -1591,7 +1613,9 @@ top:-10px !important;
     margin-top: -159px;
 }
 		.mb-none{
-display:none;}
+display:none !important;
+}
+
 }
 @media screen and (max-width: 456px){
     
@@ -1599,6 +1623,11 @@ display:none;}
     .logo-wrap{
         padding:0px !important;
         
+    }
+    .logo-wrap {
+        padding: 0px !important ;
+        display: flex;
+        justify-content: flex-start;
     }
     .single-page-bg-1 img {
         height: 100% !important;

@@ -144,9 +144,36 @@ console.log(showModal)
                         <Link to={item.to} onClick={() => setIsMobileMenuOpen(false)}>{item.label}</Link>
                       </li>
                     ))}
+
+                    <li>
+                    <div className="col-12 col-md-12 w-100 d-flex justify-content-center gap-2">
+            <Link  className="head-btn popmake-272 pum-trigger" style={{ cursor: 'pointer' }}  onClick={() => {
+    setShowModal2(!showModal2);
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  }}>Enroll Now</Link>
+          </div>
+          <div className="col-12 col-md-12 d-flex w-100 justify-content-center gap-2 ">
+
+          <Link 
+  className="head-btn popmake-278 pum-trigger" 
+  style={{ cursor: 'pointer' }} 
+  onClick={() => {
+    setShowModal(!showModal);
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  }}
+>
+  Request A Callback
+</Link>          </div>
+                    </li>
                   </ul>
-            
+          
+     
+           
               )}
+
+
+
+              
               <RequestACallback  getfunc={showModal} functionmodalclose={()=>setShowModal(false)} />
           <Enroll   getfunc2={showModal2} functionmodalclose2={()=>setShowModal2(false)}/>
             </div>

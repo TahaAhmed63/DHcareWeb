@@ -18,7 +18,7 @@ import ThemeButton from '../Components/ElementComponents/ThemeButton';
         <title>Resources</title>
         <meta name="description" content="Frequently Answer Question" />
     </Helmet>
-            <MainPagesBanner bgimage={bgimage} pagetitle={'Faqs'} />
+            <MainPagesBanner bgimage={bgimage} pagetitle={'DHCare Resources'} />
     <div className="container">
         <div className="row gy-3">
             <div className="col-md-12 col-sm-12 col-lg-12 my-4 ">

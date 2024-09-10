@@ -1176,6 +1176,17 @@ ul {
         font-size: 14px;
         text-decoration: none;
     }
+    .logo-wrap:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        background: url(https://dhcare.youronlineconversation.com/wp-content/uploads/2024/08/Ellipse-6.webp);
+        width: 100%;
+        height: 330px;
+        left: 1px;
+        background-repeat: no-repeat;
+        z-index: -1;
+    }
 ul.d-flex.menu-item-wrap li a {
     padding: 0px 10px 0px 10px;
 }

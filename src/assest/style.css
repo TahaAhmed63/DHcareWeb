@@ -1482,6 +1482,9 @@ top:-10px !important;
 
         
     }
+    .mb-flex-end{
+        justify-content: flex-end !important;
+    }
     .head-btn:nth-child(1) {
         background: #41294a;
         color: #fff;

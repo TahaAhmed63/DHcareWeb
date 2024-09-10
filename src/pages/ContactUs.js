@@ -5,6 +5,7 @@ import bgimage from "./../assest/image-34.webp";
 // import React, { useState } from 'react';
 import { Form, Button, Container } from 'react-bootstrap';
 import SocialSection from '../Components/ElementComponents/SocailSection';
+import { Helmet } from 'react-helmet-async';
 
 const ContactUs = () => {
   const [formData, setFormData] = useState({
@@ -36,6 +37,10 @@ const ContactUs = () => {
   };
   return (
     <>
+       <Helmet>
+        <title>Contact Us</title>
+        <meta name="description" content="Frequently Answer Question" />
+      </Helmet>
           <MainPagesBanner bgimage={bgimage} pagetitle={'Contact Us'} />
           <Container className="py-5">
     <div className="row">

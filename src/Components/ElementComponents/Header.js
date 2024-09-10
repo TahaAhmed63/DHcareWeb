@@ -197,7 +197,7 @@ console.log(showModal)
     line-height: 100%;
     background: #97b670 !important;
     height: 100%;
-    padding: 18px 22px !important;
+    padding: 18px 22px ;
     background: 0 0;
     text-align: left;
     color: #41c2be;

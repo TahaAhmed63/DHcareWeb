@@ -261,9 +261,9 @@ a {
     color: inherit;
     text-decoration: none;
 }
-ul.d-flex.menu-item-wrap li a {
-    padding: 0px 9px 0px 20px;
-}
+/* ul.d-flex.menu-item-wrap li a {
+    padding: 0 18px 0 18px;
+} */
 .site-header.logo-bg-remove .site-branding.logo-wrap a img{
     filter: brightness(0) invert(1);
 
@@ -288,7 +288,7 @@ color:#41d8bc;
 a.mega-menu-link {
     line-height: 40px;
     height: 40px;
-    padding: 0px 20px 0px 20px;
+    padding: 0px 14px 0px 15px;
     vertical-align: baseline;
     width: auto;
     display: block;

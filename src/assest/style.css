@@ -1002,7 +1002,7 @@ color:#3f2b45;
 .main-pages.toppageheader .singl-page-main-text h2 {
     color: #412949;
     font-size: 34px;
-    top: 45px;
+    top: 80px;
     font-weight: 700;
     position: relative;
 }
@@ -1892,7 +1892,7 @@ font-size:12px;
     font-size: 34px;
     font-weight: 700;
     position: relative;
-    top: 56px;
+    top: 0px;
 }
 
 .logo-wrap:before {

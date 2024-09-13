@@ -1680,6 +1680,110 @@ display:none !important;
 }
 
 }
+
+@media screen and (max-width: 768px){
+    #mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-item > a.mega-menu-link {
+        border-radius: 0;
+        border: 0;
+        margin: 0;
+        line-height: 100%;
+        height: 100%;
+        padding: 18px 22px !important;
+        background: transparent;
+        text-align: left;
+        color: #41c2be;
+        font-size: 20px;
+    }
+    .banner-text h1 {
+        font-size: 2em !important;
+    }
+    .mobile-toogle-im{
+        outline: none;
+        border: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        cursor: pointer;
+        position: absolute;
+        top: 18px;
+        left: 15px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background: transparent;
+    }
+    .section-heads h2 {
+        font-size: 21px;
+        padding: 18px 8px;
+    }
+    .background-mb {
+        position: absolute;
+        top: 0;
+        /* left: 0; */
+        right: 98%;
+        bottom: 0;
+        width: 100vw;
+        background: #fff;
+    }
+    .menu-mobile {
+        list-style: none;
+        padding: 0;
+        margin-left: -42px;
+        position: relative;
+        margin: 0;
+        display: flex;
+        left: 6px;
+        flex-direction: column;
+        gap: 1.5rem;
+        text-align: left;
+        left: -272px;
+    }
+	.testi-box::after {
+    content: '';
+    position: absolute;
+    background: url(https://dhcare.youronlineconversation.com/wp-content/uploads/2024/08/12.png);
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    right: 0px;
+    top: 179px;
+    left: 53%;
+    right: -44px;
+}
+.bg-sec-purple {
+    padding: 38px 0px 21px;
+}
+
+h3 {
+    font-size: 20px;
+}
+	.testi-box::after{
+right:0px;
+}
+p {
+    font-size: 16px;
+}
+	.site-header.logo-bg-remove a.mega-menu-link {
+            color: #41c2be ;
+}
+	.DHSecHead h2 {
+    color: #a8c294;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+	.learn-more{
+padding:0px 5px
+		;
+}
+.mobile-menu.open .head-btn:nth-child(1){
+display:none !important;
+}
+	.content-wrap .pagestitle h2{
+font-size:12px;
+}
+
+}
 @media screen and (max-width: 456px){
     
     
@@ -1879,109 +1983,6 @@ display:none;
 	.mb-flex-end {
     justify-content: flex-end !important;
 }
-}
-@media screen and (max-width: 768px){
-    #mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-item > a.mega-menu-link {
-        border-radius: 0;
-        border: 0;
-        margin: 0;
-        line-height: 100%;
-        height: 100%;
-        padding: 18px 22px !important;
-        background: transparent;
-        text-align: left;
-        color: #41c2be;
-        font-size: 20px;
-    }
-    .banner-text h1 {
-        font-size: 2em !important;
-    }
-    .mobile-toogle-im{
-        outline: none;
-        border: none;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        cursor: pointer;
-        position: absolute;
-        top: 18px;
-        left: 15px;
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        background: transparent;
-    }
-    .section-heads h2 {
-        font-size: 21px;
-        padding: 18px 8px;
-    }
-    .background-mb {
-        position: absolute;
-        top: 0;
-        /* left: 0; */
-        right: 98%;
-        bottom: 0;
-        width: 100vw;
-        background: #fff;
-    }
-    .menu-mobile {
-        list-style: none;
-        padding: 0;
-        margin-left: -42px;
-        position: relative;
-        margin: 0;
-        display: flex;
-        left: 6px;
-        flex-direction: column;
-        gap: 1.5rem;
-        text-align: left;
-        left: -272px;
-    }
-	.testi-box::after {
-    content: '';
-    position: absolute;
-    background: url(https://dhcare.youronlineconversation.com/wp-content/uploads/2024/08/12.png);
-    width: 100%;
-    height: 100%;
-    background-repeat: no-repeat;
-    right: 0px;
-    top: 179px;
-    left: 53%;
-    right: -44px;
-}
-.bg-sec-purple {
-    padding: 38px 0px 21px;
-}
-
-h3 {
-    font-size: 20px;
-}
-	.testi-box::after{
-right:0px;
-}
-p {
-    font-size: 16px;
-}
-	.site-header.logo-bg-remove a.mega-menu-link {
-            color: #41c2be ;
-}
-	.DHSecHead h2 {
-    color: #a8c294;
-    font-size: 24px;
-    font-weight: 400;
-}
-
-	.learn-more{
-padding:0px 5px
-		;
-}
-.mobile-menu.open .head-btn:nth-child(1){
-display:none !important;
-}
-	.content-wrap .pagestitle h2{
-font-size:12px;
-}
-
 }
 /*Mobile Responsive*/	
 .banner-container {

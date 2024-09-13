@@ -105,7 +105,7 @@ const ServicesSliderSlick = () => {
                 },
             },
             {
-                breakpoint: 667,
+                breakpoint: 800,
                 settings: {
                     slidesToShow: 2,
              

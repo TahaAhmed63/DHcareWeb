@@ -1,7 +1,28 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { gsap } from 'gsap';
+// import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
 
 const Servicesbgsec = (props) => {
     const {bgimage,List1,List2,head1}=props
+useEffect(()=>{
+
+    
+    gsap.from('.all-list', {
+        opacity: 0,
+        y: 50,
+        duration: 1.2,
+        ease: 'power2.out',
+        scrollTrigger: {
+            trigger: '.all-list',
+            start: 'top 80%',
+            end: 'bottom 20%',
+            toggleActions: 'play none none reset'
+        }
+    });
+},[])
+  
+
   return (
   <section className="single-page-bg-row d-flex align-items-center flex-reverse max-limit" style={{backgroundImage:bgimage,}}>
     <div className="container">
@@ -14,7 +35,7 @@ const Servicesbgsec = (props) => {
             <ul>
 {
     List1?.map((e,i)=>(
-<li key={i}><i class="fa-solid fa-check"></i>{e}</li>
+<li key={i} className='all-list'><i class="fa-solid fa-check"></i>{e}</li>
     ))
 }
             </ul>
@@ -26,7 +47,7 @@ const Servicesbgsec = (props) => {
             <ul>
 {
     List2?.map((e,i)=>(
-<li key={i}><i class="fa-solid fa-check"></i>{e}</li>
+<li key={i}  className='all-list'><i class="fa-solid fa-check"></i>{e}</li>
     ))
 }
             </ul>

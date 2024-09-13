@@ -11,8 +11,9 @@ const containerStyle = {
 
 // Set the center location for the map
 const center = {
-  lat: 40.712583173211684, // Example latitude
-  lng: -73.78787846731848 // Example longitude
+
+  lat: 40.71210619182388, // Example latitude
+  lng: -73.7897875312667// Example longitude
 };
 
 // Define the color scheme for the map

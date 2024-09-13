@@ -34,7 +34,7 @@ import ThemeButton from '../Components/ElementComponents/ThemeButton';
     </h4>
     </div>
     </div>
-    <div className="col-md-6 col-lg-4 col-sm-12  justify-content-center">
+    <div className="col-md-4 col-lg-4 col-sm-12  justify-content-center">
     <p style={{ textAlign: "center" }}>
     <span style={{ color: "#95b480" }}>
         <strong>English EVV Training Video</strong>
@@ -44,7 +44,7 @@ import ThemeButton from '../Components/ElementComponents/ThemeButton';
     <video src={englishvideo} preload="auto" controls="controls" width="350" height="200"></video>
     </div>
     </div>
-    <div className="col-md-6 col-lg-4 col-sm-12 justify-content-center">
+    <div className="col-md-4 col-lg-4 col-sm-12 justify-content-center">
     <p style={{ textAlign: "center" }}>
     <span style={{ color: "#95b480" }}>
         <strong>বাংলা ইভিভি প্রশিক্ষণ ভিডিও</strong>
@@ -54,7 +54,7 @@ import ThemeButton from '../Components/ElementComponents/ThemeButton';
     <video src={bangla} preload="auto" controls="controls" width="350" height="200"></video>
     </div>
     </div>
-        <div className="col-md-6 col-lg-4 col-sm-12 justify-content-center">
+        <div className="col-md-4 col-lg-4 col-sm-12 justify-content-center">
         <p style={{ textAlign: "center" }}>
         <span style={{ color: "#95b480" }}>
             <strong>英文EVV培训视频</strong>

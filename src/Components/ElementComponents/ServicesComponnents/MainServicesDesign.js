@@ -1,6 +1,7 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useRef, useLayoutEffect } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+// import { useGSAP } from '@gsap/react';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -9,11 +10,13 @@ const MainServicesDesign = (props) => {
     const imgRef = useRef(null);
     const textRef = useRef(null);
 
-    useEffect(() => {
+    useLayoutEffect(() => {
         if (imgRef.current && textRef.current) {
-            imgRef.current.style.transform = imagealignment === 'right' ? 'translateX(100%)' : 'translateX(-100%)'; // Set initial x position
+            // Set initial positions
+            imgRef.current.style.transform = imagealignment === 'right' ? 'translateX(100%)' : 'translateX(-100%)';
 
-            gsap.to(imgRef.current, {
+            // Create the ScrollTrigger animations
+            const imgAnimation = gsap.to(imgRef.current, {
                 x: 0, // Animate to original position
                 duration: 1.5,
                 ease: 'power2.inOut',
@@ -21,23 +24,32 @@ const MainServicesDesign = (props) => {
                     trigger: imgRef.current,
                     start: 'top 80%',
                     end: 'bottom 20%',
-                    toggleActions: 'play none none reset',
-                }
+                    toggleActions: 'play reverse play reverse', // Play every time the element enters/leaves view
+                },
             });
 
-            gsap.to(textRef.current, {
-                y: 0,
+            const textAnimation = gsap.to(textRef.current, {
+                y: 0, // Animate to original position
                 duration: 1,
                 ease: 'power2.inOut',
                 scrollTrigger: {
                     trigger: textRef.current,
                     start: 'top 80%',
                     end: 'bottom 20%',
-                    toggleActions: 'play none none reset',
-                }
+                    toggleActions: 'play reverse play reverse', // Play every time the element enters/leaves view
+                },
             });
+
+            // Refresh ScrollTrigger to ensure proper calculation
+            ScrollTrigger.refresh();
+
+            return () => {
+                // Kill specific ScrollTrigger instances for cleanup
+                imgAnimation.scrollTrigger.kill();
+                textAnimation.scrollTrigger.kill();
+            };
         }
-    },);
+    }, [imagealignment]); 
 
     return (
         <section className="single-page-bg-1 mb-flex-reverse max-limit" style={{ background: bgColor, marginTop: '100px', marginBottom: '100px', position: 'relative' }}>

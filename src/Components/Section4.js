@@ -47,18 +47,19 @@ const Section4 = () => {
       });
     });
 
+
     gsap.from(textRef.current, {
-      scrollTrigger: {
-        trigger: textRef.current,
-        start: 'top 80%',
-        end: 'bottom 20%',
-        toggleActions: 'play none none reset',
-      },
       opacity: 0,
-      x: 100,
-      duration: 0.5,
-      ease: 'power2.inOut',
-    });
+      y: 50,
+      duration: 1.2,
+      ease: 'power2.out',
+      scrollTrigger: {
+          trigger: textRef.current,
+          start: 'top 80%',
+          end: 'bottom 20%',
+          toggleActions: 'play none none reset'
+      }
+  });
   }, []);
 
   return (
@@ -71,9 +72,9 @@ const Section4 = () => {
             </div>
           </div>
           <div className="col-12 col-sm-12 col-lg-7 col-md-7 text-left" style={{textAlign:'left'}}>
-            <div ref={textRef} className="wpb_text_column wpb_content_element">
+            <div  className="wpb_text_column wpb_content_element">
               <div className="wpb_wrapper">
-                <h3>
+                <h3 ref={textRef}>
                   <span style={{ color: "#ffffff" }}>
                     <strong>
                       The satisfaction of our clients stems from our ability to help people
@@ -82,7 +83,7 @@ const Section4 = () => {
                     </strong>
                   </span>
                 </h3>
-                <p>
+                <p ref={textRef}>
                   <span style={{ color: "#ffffff" }}>
                     The new sensibility of modern society lays claim to the value of
                     experience. Technological advances in health, heightened levels of
@@ -93,7 +94,7 @@ const Section4 = () => {
                     growth in our client satisfaction over the last few years.
                   </span>
                 </p>
-                <p >
+                <p ref={textRef} >
                   <span style={{ color: "#ffffff" }}>
                     We continuously work to keep client satisfaction above 95%. These
                     ratings show the exceptional value that our caregivers provide to

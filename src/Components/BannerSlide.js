@@ -150,9 +150,10 @@ const BannerSlide = () => {
                     .banner-text {
                         font-size: 14px;
                     }
-                   .cta-button {
-        font-size: 13px;
+          .cta-button {
+        font-size: 3vw;
         padding: 2px 16px;
+        line-height: 3vh;
     }
                 }
             `}</style>

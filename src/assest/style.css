@@ -1520,13 +1520,13 @@ top:-10px !important;
         overflow: hidden;
     }
     .banner-container {
-        height: 312px !important;
+        height: 100%  !important;
     }
     .banner-container h1 {
         font-size: 4vw !important;
-        width: 100% !important;
-        /* width: 100% !important; */
         line-height: 4vh;
+        width: 100% !important;
+        padding: 10px 3px;
     }
     .banner-text h2 {
         background-color: rgba(255, 255, 255, 0);
@@ -1673,6 +1673,15 @@ display:none !important;
     .logo-wrap{
         padding:0px !important;
         
+    }
+    .banner-container {
+        height: 312px !important;
+    }
+    .banner-container h1 {
+        font-size: 4vw !important;
+        line-height: 4vh;
+        width: 100% !important;
+        padding: 10px 3px;
     }
     .mobile-menu li {
         margin-bottom: 9px  !important;

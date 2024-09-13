@@ -1176,11 +1176,7 @@ ul {
         font-size: 14px;
         text-decoration: none;
     }
-    .single-page-bg-row {
-      
-        padding: 176px 0px;
-     
-    }
+
     .banner-container img {
         filter: brightness(1);
         transition: filter 0.5s ease-in-out;
@@ -1716,6 +1712,11 @@ display:none !important;
         height: 50px;
         border-radius: 50%;
         background: transparent;
+    }
+    .single-page-bg-row {
+      
+        padding: 176px 0px !important;
+     
     }
     .section-heads h2 {
         font-size: 21px;

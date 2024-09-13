@@ -1588,22 +1588,7 @@ top:-10px !important;
     .col-12.col-sm-12.col-lg-7.col-md-7.text-left {
         margin-top: 21px;
     }
-    .main-banner {
-        background-size: 100% 90%;
-        background-position: center;
-        height: 275px !important;
-        position: relative;
-        left: 0;
-        right: 0;
-        /* position: relative; */
-        transition-property: transform;
-        display: block;
-        top: 0;
-        bottom: 0;
-        height: '100%';
-        z-index: 999;
-        background-repeat: no-repeat;
-    }
+ 
     .banner-container img {
         filter: brightness(1);
         transition: filter 0.5s ease-in-out;
@@ -1691,6 +1676,22 @@ display:none !important;
     }
     .mobile-menu li {
         margin-bottom: 9px  !important;
+    }
+    .main-banner {
+        background-size: 100% 90%;
+        background-position: center;
+        height: 275px !important;
+        position: relative;
+        left: 0;
+        right: 0;
+        /* position: relative; */
+        transition-property: transform;
+        display: block;
+        top: 0;
+        bottom: 0;
+        height: '100%';
+        z-index: 999;
+        background-repeat: no-repeat;
     }
     .mobile-menu li a {
         border-radius: 0;

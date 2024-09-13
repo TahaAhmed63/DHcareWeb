@@ -135,9 +135,10 @@ const BannerSlide = () => {
                     .banner-container img {
                         height: 500px;
                     }
-                    .banner-text {
-                        font-size: 18px;
-                    }
+                      .banner-text {
+        font-size: 18px;
+        top: 32%;
+    }
                     .cta-button {
                         font-size: 16px;
                         padding: 10px 20px;

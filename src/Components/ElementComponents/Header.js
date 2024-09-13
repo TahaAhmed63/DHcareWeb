@@ -309,11 +309,9 @@ console.log(showModal)
             display: block;
           }
           .main-navigation ul {
-            display: ${isMobileMenuOpen ? 'block' : 'none'};
+            display: none !important;
           }
-          .main-navigation ul.is-open {
-            display: block;
-          }
+        
                 .mb-flex-end{
         justify-content: flex-end !important;
     }

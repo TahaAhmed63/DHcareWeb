@@ -1229,7 +1229,7 @@ font-size:15px;
 .banner-container {
     position: relative;
     width: 100%;
-    height: 513px !important;
+    height: 100% !important;
     overflow: hidden;
 }
 .py-5{
@@ -1317,7 +1317,7 @@ font-size:15px;
 .banner-container {
     position: relative;
     width: 100%;
-    height: 513px !important;
+    height: 100% !important;
     overflow: hidden;
 }
 .slick-slide {
@@ -1338,9 +1338,9 @@ font-size:15px;
     overflow: visible !important;
         height: 277px;
 }
-	a.mega-menu-link{
+a.mega-menu-link {
     font-size: 11px;
-		    padding: 0 9px;
+    padding: 0 17px !important;
 }
 .head-btn:nth-child(2) {
     background: #bd0100;
@@ -1490,6 +1490,14 @@ top:-10px !important;
 
         
     }
+    .slick-slide.slick-active.last div .service-item {
+        perspective: 1000px !important;
+        transform-style: preserve-3d;
+        transform: rotateY(0deg);
+        scale: 1;
+        position: relative;
+        right: 0px;
+    }
     .mb-flex-end{
         justify-content: flex-end !important;
     }
@@ -1561,7 +1569,12 @@ top:-10px !important;
         padding: 14px;
     }
     .slick-slide{
-        margin:0px  !important
+        margin:0  !important
+    }
+    .slick-slide .service-item {
+        background: #fff;
+        /* padding: 20px; */
+        margin: 0 4px;
     }
     .slick-slide.prev div .service-item{
 
@@ -1673,6 +1686,9 @@ display:none !important;
     .logo-wrap{
         padding:0px !important;
         
+    }
+    .slick-slide{
+        margin:0px  !important
     }
     .banner-container {
         height: 312px !important;
@@ -1877,6 +1893,9 @@ display:none;
         color: #41c2be;
         font-size: 20px;
     }
+    .banner-text h1 {
+        font-size: 2em !important;
+    }
     .mobile-toogle-im{
         outline: none;
         border: none;
@@ -1951,21 +1970,18 @@ p {
     font-size: 24px;
     font-weight: 400;
 }
+
 	.learn-more{
 padding:0px 5px
 		;
 }
+.mobile-menu.open .head-btn:nth-child(1){
+display:none !important;
+}
 	.content-wrap .pagestitle h2{
 font-size:12px;
 }
-	.head-btn:nth-child(1) {
-    background: #41294a;
-    color: #fff;
-    padding:10px 7px;
-    border-radius: 10px;
-    font-size: 9px;
-    text-decoration: none;
-}
+
 }
 /*Mobile Responsive*/	
 .banner-container {

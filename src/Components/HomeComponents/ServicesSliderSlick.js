@@ -105,11 +105,10 @@ const ServicesSliderSlick = () => {
                 },
             },
             {
-                breakpoint: 600,
+                breakpoint: 667,
                 settings: {
-                    slidesToShow: 3,
-                    arrow:false,
-                    initialSlide: 3
+                    slidesToShow: 2,
+             
                 },
             },
             {

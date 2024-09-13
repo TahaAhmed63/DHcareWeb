@@ -1679,7 +1679,7 @@ display:none !important;
     }
     .banner-container h1 {
         font-size: 4vw !important;
-        line-height: 4vh;
+        line-height: 1vh;
         width: 100% !important;
         padding: 10px 3px;
     }

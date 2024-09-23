@@ -281,7 +281,7 @@ color:#41d8bc;
     content: '';
     position: absolute;
     top: 0;
-    background: url(https://dhcare.youronlineconversation.com/wp-content/uploads/2024/08/Ellipse-6.webp);
+    background: url(./Ellipse-6.webp);
     width: 100%;
     height: 488px;
     left: 1px;
@@ -800,7 +800,7 @@ z-index: 99;
     margin-bottom: 17px;
 }
 .bg-sec-purple{
-        background-image: url(https://dhcare.youronlineconversation.com/wp-content/uploads/2024/08/Shape-1.png?id=126) !important;
+        background-image: url(./Shape-12.png) !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
     background-size: cover;
@@ -813,7 +813,7 @@ z-index: 99;
     width: 100%;
 }
 .bg-sec-purple {
-    background-image: url(https://dhcare.youronlineconversation.com/wp-content/uploads/2024/08/Shape-1.png?id=126) !important;
+    background-image: url(./Shape-12.png) !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
     background-size: 100% 100%;
@@ -888,7 +888,7 @@ z-index: 99;
 .testi-box::before {
     content: '';
     position: absolute;
-    background: url(https://dhcare.youronlineconversation.com/wp-content/uploads/2024/08/11-1.png);
+    background: url(./11-1.png);
     width: 100%;
     height: 100%;
     background-repeat: no-repeat;
@@ -898,7 +898,7 @@ z-index: 99;
 .testi-box::after {
     content: '';
     position: absolute;
-    background: url(https://dhcare.youronlineconversation.com/wp-content/uploads/2024/08/12.png);
+    background: url(./12.png);
     width: 100%;
     height: 100%;
     background-repeat: no-repeat;
@@ -1153,7 +1153,7 @@ ul {
 
 .single-page-bg-row{
  margin-top: 100px !important;
-    background-image: url(https://dhcare.youronlineconversation.com/wp-content/uploads/2024/08/New-Project-45.webp?id=248) !important;
+    background-image: url(./New-Project-45.webp) !important;
     background-position: center !important;
     height: 900px;
     background-repeat: no-repeat !important;
@@ -1194,7 +1194,7 @@ ul {
         content: '';
         position: absolute;
         top: 0;
-        background: url(https://dhcare.youronlineconversation.com/wp-content/uploads/2024/08/Ellipse-6.webp);
+        background: url(./Ellipse-6.webp);
         width: 100%;
         height: 330px;
         left: 1px;
@@ -1446,7 +1446,22 @@ a.mega-menu-link {
         font-size: 15px
     }
 }
-
+@media screen and (min-width: 1700px){
+    .max-limit {
+        left: 0px !important;
+        width: 1320px !important;
+        margin: 0 auto !important;
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+    .max-limits {
+        left: -12px !important;
+        width: 1320px !important;
+        margin: 0 auto !important;
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+        }
+}
 @media screen and (min-width: 2000px)
 {
     section.single-page-bg-1.mb-flex-reverse.max-limit {
@@ -1545,6 +1560,7 @@ top:-10px !important;
     .banner-container h1 {
         font-size: 4vw !important;
         line-height: 4vh;
+        
         width: 100% !important;
         padding: 10px 3px;
     }
@@ -1553,6 +1569,7 @@ top:-10px !important;
         font-family: Ubuntu;
         height: auto;
         color: rgb(255, 255, 255);
+  
         text-decoration: none;
         white-space: normal;
         font-family: 'ubunto';
@@ -1652,7 +1669,7 @@ top:-10px !important;
 }
     .single-page-bg-row {
 
-    background-image: url(https://dhcare.youronlineconversation.com/wp-content/uploads/2024/08/New-Project-45.webp?id=248) !important;
+    background-image: url(./New-Project-45.webp) !important;
     background-position: center !important;
     /* background-color: #413050; */
     height: 100% !important;
@@ -1765,7 +1782,7 @@ display:none !important;
 	.testi-box::after {
     content: '';
     position: absolute;
-    background: url(https://dhcare.youronlineconversation.com/wp-content/uploads/2024/08/12.png);
+    background: url(./12.png);
     width: 100%;
     height: 100%;
     background-repeat: no-repeat;
@@ -1944,7 +1961,9 @@ display:none ;
         
     }
     .single-page-bg-row {
-        background-image: url(https://dhcare.youronlineconversation.com/wp-content/uploads/2024/08/New-Project-45.webp?id=248) !important;
+        background-image: url(./New-Project-45.webp) !important;
+        background: #4c3750;
+        /* background-image: none !important; */
         background-position: 50% !important;
         background-repeat: no-repeat !important;
         background-size: cover;
@@ -1972,8 +1991,8 @@ display:none ;
         line-height: 22px;
     }
     .single-page-bg-row {
-      
-        padding: 81px 0px  !important;
+        padding: 10px 0px !important;
+        background-size: cover !important;
     }
     .small-text-main ul li > i {
   
@@ -2063,7 +2082,7 @@ display:none;
     background-color: rgba(255, 255, 255, 0);
     font-family: Ubuntu;
     height: auto;
-    color: rgb(255, 255, 255);
+    color: rgb(65 41 73);
     text-decoration: none;
     white-space: normal;
     font-family: 'ubunto';
@@ -2074,11 +2093,13 @@ display:none;
     /* width: 287px; */
 }
 .banner-text h1 {
-    background-color: rgb(255, 255, 255);
+    /* background-color: rgb(255, 255, 255); */
     font-family: 'ubunto';
     height: auto;
+    text-shadow: 1px 2px #412949;
     font-weight: 600;
-    color: rgb(72, 51, 79);
+    color: #9dbb79;
+    text-shadow: 1px 2px #412949;
     font-size: 44px ;
     width: 425px;
     margin: 9px 0px;
@@ -2143,7 +2164,7 @@ display:none;
     content: '';
     position: absolute;
     top: 0;
-    background: url(https://dhcare.youronlineconversation.com/wp-content/uploads/2024/08/Ellipse-6.webp);
+    background: url(./Ellipse-6.webp);
     width: 100%;
     height: 335px;
     left: 1px;
@@ -2176,7 +2197,7 @@ input#gform_submit_button_4 {
 }
 
 .form-bg {
-    background-image: url(https://dhcare.youronlineconversation.com/wp-content/uploads/2024/08/Shape-1.png?id=126);
+    background-image: url(./Shape-1.png);
     padding: 141px;
     background-size: 100% 100%;
     color: #fff;

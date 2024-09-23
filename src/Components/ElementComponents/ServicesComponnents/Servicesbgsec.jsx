@@ -26,8 +26,8 @@ useEffect(()=>{
   return (
   <section className="single-page-bg-row d-flex align-items-center flex-reverse max-limit" style={{backgroundImage:bgimage,}}>
     <div className="container">
-    <div className="row align-items-center flex-row-reverse">
-    <div className="col-md-6 col-6">
+    <div className="row align-items-center ">
+    <div className="col-md-6 col-12">
         <div className="small-text-main">
             <h2>
                 {head1}
@@ -41,7 +41,7 @@ useEffect(()=>{
             </ul>
         </div>
     </div>
-    <div className="col-md-6 col-6">
+    <div className="col-md-6 col-12">
     <div className="small-text-main">
           
             <ul>

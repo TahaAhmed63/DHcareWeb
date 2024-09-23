@@ -1496,6 +1496,9 @@ top:-10px !important;
 
         
     }
+    .cursor{
+        display: none;
+    }
     .video-wrap video {
         width: 100%;
     }

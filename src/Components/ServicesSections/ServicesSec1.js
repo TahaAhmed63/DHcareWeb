@@ -5,7 +5,7 @@ import singleimg from "./../../assest/image-34.webp"
 
 const ServicesSec1 = () => {
   return (
-   <SinglePageBanner  singleimg={singleimg} singlehead={'Home Care Services '} singlepara={'At DHCare we are dedicated to providing the highest quality of home care services to our patients. '}/>
+   <SinglePageBanner pageClass={'services-page'}  singleimg={singleimg} singlehead={'Home Care Services '} singlepara={'At DHCare we are dedicated to providing the highest quality of home care services to our patients. '}/>
 
   )
 }

@@ -806,7 +806,9 @@ z-index: 99;
 .owl-carousel.services-slider2 {
     height: 577px;
 }
-
+.video-wrap video {
+    width: 100%;
+}
 .bg-sec-purple {
     background-image: url(https://dhcare.youronlineconversation.com/wp-content/uploads/2024/08/Shape-1.png?id=126) !important;
     background-position: center !important;
@@ -830,7 +832,7 @@ z-index: 99;
     padding: 89px;
     margin: 0 auto;
     position: relative;
-    max-width: 986px;
+    max-width: 72%;
     height: 250px;
     text-align: center;
     color: #fff;
@@ -1491,6 +1493,9 @@ top:-10px !important;
 
         
     }
+    .video-wrap video {
+        width: 100%;
+    }
     .slick-slide.slick-active.last div .service-item {
         perspective: 1000px !important;
         transform-style: preserve-3d;
@@ -1591,9 +1596,9 @@ top:-10px !important;
         padding: 2px 16px;
         line-height: 3vh;
     }
-      .banner-container h2 {
-        font-size: 18px !important;
-        line-height: 28px !important;
+    .banner-container h2 {
+        font-size: 43px !important;
+        line-height: 59px !important;
     }
     
     .swiper-button-prev, .swiper-button-next ,  .slick-prev, .slick-next{
@@ -1665,17 +1670,24 @@ top:-10px !important;
     max-width: 100%;
     margin: 0 auto;
 }
-    .singl-page-main-text {
-    margin-top: -211px;
+.singl-page-main-text {
+    margin-top: -139px;
     text-align: center;
 }
-    .toppageheader img{
-            height: 375px;
+.toppageheader img {
+    height: 100%;
+}
+    .logo-wrap:before {
+    display: none;
     }
     .toppageheader {
-    margin-bottom: 123px;
-    margin-top: -159px;
-}
+        margin-bottom: 47px;
+        margin-top: -159px;
+    }
+    .toppageheader.services-page {
+        margin-bottom: 154px;
+        margin-top: -159px;
+    }
 		.mb-none{
 display:none !important;
 }
@@ -1758,6 +1770,7 @@ display:none !important;
 }
 .bg-sec-purple {
     padding: 38px 0px 21px;
+    background: #41294a !important;
 }
 
 h3 {
@@ -1796,6 +1809,10 @@ font-size:12px;
     .logo-wrap{
         padding:0px !important;
         
+    }
+    .banner-container h2 {
+        font-size: 18px !important;
+        line-height: 28px !important;
     }
     .slick-slide{
         margin:0px  !important
@@ -1930,21 +1947,27 @@ display:none ;
         padding: 2px;
     }
     .singl-page-main-text p {
-    color: #fff;
-    font-weight: lighter;
-    max-width: 100%;
-    margin: 0 auto;
-}
-    .singl-page-main-text {
-    margin-top: -211px;
-    text-align: center;
-}
-    .toppageheader img{
-            height: 375px;
+        color: #fff;
+        font-weight: lighter;
+        max-width: 98%;
+        margin: 0 auto;
     }
-    .toppageheader {
+    .singl-page-main-text {
+        margin-top: -179px;
+        text-align: center;
+    }
+.toppageheader img {
+    height: 100%;
+    object-fit: cover;
+}
+.toppageheader.services-page {
     margin-bottom: 123px;
     margin-top: -159px;
+    height: 344px;
+}
+.toppageheader {
+    margin-bottom: 43px;
+
 }
     .mb-none{
         display:none !important;

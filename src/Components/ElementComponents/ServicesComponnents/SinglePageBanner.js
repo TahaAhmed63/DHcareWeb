@@ -1,9 +1,9 @@
 import React from 'react'
 
 const SinglePageBanner = (props) => {
-  const {singleimg,singlehead,singlepara}=props
+  const {singleimg,singlehead,singlepara,pageClass}=props
   return (
-<section className="toppageheader max-limit">
+<section className={`toppageheader max-limit ${pageClass}`}>
   <img
     className="img-fluid"
     src={singleimg}

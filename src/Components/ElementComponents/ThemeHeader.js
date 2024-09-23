@@ -53,7 +53,7 @@ const ThemeHeader = (props) => {
         <div className="wpb_wrapper">
           <h2 style={{ textAlign: "center" }}>
             {line1head}
-            <br />
+            <br  class="mb-none"/>
             {line2head}
           </h2>
         </div>

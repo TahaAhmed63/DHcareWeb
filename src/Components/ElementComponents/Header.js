@@ -65,7 +65,7 @@ console.log(showModal)
 
   const navItems = [
     { to: '/about-us', label: 'About Us' },
-    { to: '/services', label: 'Our Services' },
+    { to: '/services/home-care-services', label: 'Our Services' },
     { to: '/resources', label: 'DHCARE Resources' },
     { to: '/faqs', label: 'FAQs' },
     { to: '/blogs', label: 'Blogs' },

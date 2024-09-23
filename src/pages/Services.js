@@ -10,7 +10,7 @@ const Services = () => {
   return (
     <>
   <Helmet>
-        <title>Services</title>
+        <title>Home Care Services</title>
         <meta name="description" content="this are the dhcare Services" />
       </Helmet>
 

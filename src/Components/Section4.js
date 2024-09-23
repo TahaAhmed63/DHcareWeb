@@ -8,6 +8,8 @@ gsap.registerPlugin(ScrollTrigger);
 const Section4 = () => {
   const imageRef = useRef(null);
   const textRef = useRef(null);
+  
+  const isMobile = window.matchMedia("(max-width: 767px)").matches;
 
   useEffect(() => {
     gsap.from(imageRef.current, {
@@ -26,7 +28,7 @@ const Section4 = () => {
     gsap.to(imageRef.current, {
       duration: 2,
       y: -10,
-      repeat: -1,
+      repeat: isMobile ? 0 : -1, // only repeat on non-mobile devices
       yoyo: true,
       ease: 'power2.inOut',
     });
@@ -60,6 +62,7 @@ const Section4 = () => {
           toggleActions: 'play none none reset'
       }
   });
+  //eslint-disable-next-line
   }, []);
 
   return (

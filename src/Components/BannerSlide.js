@@ -147,6 +147,7 @@ const BannerSlide = () => {
                 @media only screen and (max-width: 480px) {
                      .banner-container img {
         height: 100%;
+                display: none;
     }
                     .banner-text {
                         font-size: 14px;

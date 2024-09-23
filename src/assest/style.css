@@ -1791,15 +1791,15 @@ p {
     font-weight: 400;
 }
 
-	.learn-more{
-padding:0px 5px
-		;
+.learn-more {
+    padding: 0 14px;
+    font-size: 20px;
 }
 /* .mobile-menu.open .head-btn:nth-child(1){
 display:none !important;
 } */
-	.content-wrap .pagestitle h2{
-font-size:12px;
+.content-wrap .pagestitle h2 {
+    font-size: 18px;
 }
 
 }
@@ -1835,8 +1835,19 @@ font-size:12px;
     .mobile-menu li {
         margin-bottom: 9px  !important;
     }
+    .home-bg-form {
+        background-color: #eaf8f8 !important;
+        margin-top: -17px;
+    }
+    .bg-back-img {
+        background-size: cover !important;
+    }
+    .site-header {
+        padding: 20px 1px;
+    
+    }
     .main-banner {
-        background-size: 100% 90%;
+        background-size: contain;
         background-position: center;
         height: 275px !important;
         position: relative;

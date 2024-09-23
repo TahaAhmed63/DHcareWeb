@@ -15,7 +15,7 @@ const ServicesSliderSlick = () => {
         {
           id: 1,
           title: "Nursing",
-          description: "Our excellent home care service is perfect for patients who want long-term health care for their existing conditions and everyday needs. This home health aide program aims to help elderly home patients feel independent through a regular and quality home care program specially designed for senior care. We provide support for home nursing including medication management, 24/7 call access to emergency assistance and more.",
+          description: "Our home care service offers long-term support for patients with existing conditions and daily needs to provide dedicated assistance.",
           image: serviceimg1,
           link: "#service1"
         },
@@ -29,21 +29,21 @@ const ServicesSliderSlick = () => {
         {
           id: 3,
           title: "Transportation",
-          description: "We can help you access transportation services whether it is for one-time events, or for day to day activities. Your caregiver will supervise or help you outside the home so you can go where you need to without the risk of falling. At home, they will help with transferring from bed to wheelchair. Our home attendants and nurses are fully trained and certified. ",
+          description: "We provide assistance for one-time events or daily needs, with caregivers offering supervision and support outside the home.",
           image: serviceimg3,
           link: "#service3"
         },
         {
           id: 4,
           title: "Nutrition",
-          description: "We can help you with everyday groceries and healthy meal preparation. Our home health aides understand how important meal planning guidance is to fulfill patients’ nutritional needs. In addition, DHCare can assist you with any special diet accommodations you may need which include but are not limited to health, religious, and cultural restrictions. ",
+          description: " We assist with groceries and healthy meal prep, with aides providing meal planning support to meet patients' needs.",
           image: serviceimg4,
           link: "#service4"
         },
         {
           id: 5,
           title: "Home Care",
-          description: "Homemaker service for seniors, disabled individuals, injured, or ill adults can be a full-time task. Let your home health aide take care of this for you so that you can spend more time with your family and doing the things you enjoy. ",
+          description: "Caring for seniors, disabled, injured, or ill adults can be demanding. Let our home health aides handle it, so you can focus on what matters most. ",
           image:serviceimg5,
           link: "#service5"
         },
@@ -149,11 +149,11 @@ const ServicesSliderSlick = () => {
                           <p>{service.description}</p>
                         </div>
                         <div className="slidrbuttns d-flex justify-content-center">
-                          <a href={service.link}>
-                            <button className="learn-more" id={service.id}>
+                          {/* <a href={service.link}>
+                            {/* <button className="learn-more" id={service.id}>
                               Learn More
-                            </button>
-                          </a>
+                            </button> 
+                          </a> */}
                         </div>
                       </div>
                     </div>

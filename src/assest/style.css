@@ -433,8 +433,8 @@ color:#000;
     transition: 0.8s linear;
 }
 #site-navigation .mega-menu-link:hover {
-    color: rgb(168, 194, 148);
-    transition: 0.8s linear;
+    color: #41294a;
+    transition: .8s linear;
 }
 .socail-icons-wrap a:hover  i{
     color: #97b770;
@@ -1315,6 +1315,7 @@ font-size:15px;
     font-size: 14px;
     text-decoration: none;
 }
+
 .content-wrap .pagestitle h2 {
 
     font-size: 18px !important;

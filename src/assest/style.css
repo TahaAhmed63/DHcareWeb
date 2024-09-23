@@ -452,10 +452,10 @@ color:#000;
 
 }
 .bg-back-img {
-    background-image: url('./New-Project\ \(1\).webp') !important;
-    background-position: center !important;
+    background-image: url('./shutterstock_2474183475\ \(2\).webp') !important;
+    background-position-y: 25%;
     background-repeat: no-repeat !important;
-    background-size: 100% 100% !important;
+    background-size: cover !important;
     padding: 20px;
 }
 .social-icons-wrap a:hover i {

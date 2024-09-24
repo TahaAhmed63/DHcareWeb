@@ -27,7 +27,7 @@ function App() {
   }, []);
   return (
     <div className="App">
-         <Cursor />
+
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />

@@ -1,92 +1,61 @@
-    import React from 'react'
-    import { Helmet } from 'react-helmet-async'
-    import MainPagesBanner from '../Components/ElementComponents/MainPagesBanner'
-    import bgimage from "./../assest/image-34.webp";
-    // import { Link } from 'react-router-dom';
-    import englishvideo from "./../assest/EVV-Training-English.mp4"
-    import chinese from "./../assest/EVV-Training-Chinese.mp4"
-    import bangla from "./../assest/EVV-Training-Bangla.mp4"
-    import img1 from "./../assest/EVV-SpanishImage.png"
-    import pdf from "./../assest/EVV-English (1).pdf"
-    import img2 from "./../assest/EVV-BanglaImage (1).png"
-    import img3 from "./../assest/EVV-ChineseImage (1).png"
-import ThemeButton from '../Components/ElementComponents/ThemeButton';
-    const Resources = () => {
+import React from 'react';
+import { Helmet } from 'react-helmet-async';
+import MainPagesBanner from '../Components/ElementComponents/MainPagesBanner';
+import bgimage from "./../assest/image-34.webp";
+import { Link } from 'react-router-dom';
+
+const Resources = () => {
+    const resourceData = [
+        {
+            title: "Elder abuse",
+            desc: "<p>Elder abuse refers to the mistreatment of older adults, including physical, emotional, sexual abuse, financial exploitation, and neglect. It can occur in various settings, including homes, nursing facilities, and assisted living communities.</p>",
+            docspath: "elderly-abuse"
+        },
+        {
+            title: "Vaccines for Elderly",
+            desc: "<p>Vaccination is crucial for older adults to prevent serious diseases and complications. As people age, their immune systems weaken, making them more susceptible to infections and diseases.</p>",
+            docspath: "elderly-vacine"
+        },
+        {
+            title: "Other Resources",
+            desc: `<ul><li>Clock In Out</li><li>EVV</li></ul>`,
+            docspath: "clock-in-out-instructions"
+        }
+    ];
+
     return (
         <>
-        <Helmet>
-        <title>Resources</title>
-        <meta name="description" content="Frequently Answer Question" />
-    </Helmet>
+            <Helmet>
+                <title>Resources</title>
+                <meta name="description" content="Frequently Asked Questions" />
+            </Helmet>
             <MainPagesBanner bgimage={bgimage} pagetitle={'DHCare Resources'} />
-    <div className="container">
-        <div className="row gy-3">
-            <div className="col-md-12 col-sm-12 col-lg-12 my-4 ">
-            <div className="wpb_wrapper">
-    <h2 className="page-title-inner" style={{ textAlign: "center" }}>
-        <span style={{ color: "#95b480" }}>Clock In Out</span>
-    </h2>
+            <div className="container">
+                <div className="row gy-2">
+                    {
+                        resourceData.map((resource, index) => (
+                            <div className={`${index === 2? 'col-md-12 col-lg-4 d-flex justify-content-center' : 'col-12 col-md-6 col-lg-4'}`} key={index}>
 
-    <h4 className="subtitle" style={{ textAlign: "center" }}>
-        <span style={{ color: "#402949" }}>
-        <strong>Clock In Out Instructions</strong>
-        </span>
-    </h4>
-    </div>
-    </div>
-    <div className="col-md-6 d-flex flex-column align-items-center col-lg-4 col-sm-12 justify-content-center">
-    <p style={{ textAlign: "center" }}>
-    <span style={{ color: "#95b480" }}>
-        <strong>English EVV Training Video</strong>
-    </span>
-    </p>
-    <div className="video-wrap">
-    <video src={englishvideo} preload="auto" controls="controls" width="350" height="200"></video>
-    </div>
-    </div>
-    <div className="col-md-6 d-flex flex-column align-items-center col-lg-4 col-sm-12 justify-content-center">
-    <p style={{ textAlign: "center" }}>
-    <span style={{ color: "#95b480" }}>
-        <strong>বাংলা ইভিভি প্রশিক্ষণ ভিডিও</strong>
-    </span>
-    </p>
-    <div className="video-wrap">
-    <video src={bangla} preload="auto" controls="controls" width="350" height="200"></video>
-    </div>
-    </div>
-        <div className="col-md-12 d-flex col-lg-4 col-sm-12 justify-content-center flex-column align-items-center">
-        <p style={{ textAlign: "center" }}>
-        <span style={{ color: "#95b480" }}>
-            <strong>英文EVV培训视频</strong>
-        </span>
-        </p>
-        <div className="video-wrap">
-        <video src={chinese} preload="auto" controls="controls" width="350" height="200"></video>
-        </div>
-        </div>
-
-    <div className="col-md-4">
-    <img src={img1} alt="" className="img-fluid" />
-    </div>
-    <div className="col-md-4">
-    <img src={img2} alt="" className="img-fluid" />
-    </div>
-    <div className="col-md-4">
-    <img src={img3} alt="" className="img-fluid" />
-    </div>
-
-    <div className="col-md-12 d-flex justify-content-center">
-        <a href={pdf} target='_blank'  rel="noreferrer">
-        
-        <ThemeButton btnText={'Download PDF'}  btnRadious={'12px'} backgroundColor={'#9fbb7f'}/>
-        </a>
-    </div>
+                                <div className={`c-card-wrap aos-init aos-animate `} data-aos="fade-up">
+                                    <div className={`c-card text-center ${index=== 0 || index === 2 ? ` same-bx`:``}`}>
+                                        <div className="c-card__body">
+                                            <h5 className="c-card__title">{resource?.title}</h5>
+                                            <div className="c-card__description u-primary-200" 
+                                                dangerouslySetInnerHTML={{ __html: resource?.desc }} >
+                                            </div>
+                                        </div>
+                                        <div className="c-card__btn">
+                                            <Link to={`/${resource?.docspath}`} className="c-button c-button--secondary">View Resources</Link>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        ))
+                    }
+                </div>
             </div>
-        </div>
+        </>
+    );
+};
 
-
-    </>
-    )
-    }
-
-    export default Resources
+export default Resources;

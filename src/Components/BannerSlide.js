@@ -1,10 +1,11 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectFade, Autoplay } from 'swiper/modules'; 
 import 'swiper/css'; 
 import 'swiper/css/effect-fade'; 
 import bannerimg from "./../assest/banner.webp";
 import { gsap } from 'gsap';
+import RequestACallback from './ElementComponents/RequestACallback';
 
 const BannerSlide = () => {
     const bannerRef = useRef(null);
@@ -12,7 +13,7 @@ const BannerSlide = () => {
     const textRef = useRef(null);
     const buttonRef = useRef(null);
     const imageRef = useRef(null);
-  
+    const [showModal, setShowModal] = useState(false); // Manage modal state in parent component
     useEffect(() => {
       const tl = gsap.timeline();
   
@@ -112,11 +113,15 @@ const BannerSlide = () => {
             <div className="banner-text" ref={textRef}>
               <h1>Quality Home Care</h1>
               <h2>Every Day</h2>
-              <button className="cta-button" ref={buttonRef}>Our Services</button>
+              <button className="cta-button" ref={buttonRef}   onClick={() => {
+    setShowModal(!showModal);
+
+  }}>Request A CallBack</button>
             </div>
           </div>
         </SwiperSlide>
       </Swiper>
+      <RequestACallback  getfunc={showModal} functionmodalclose={()=>setShowModal(false)} />
       <style jsx>{`
                 .banner-container img {
                     filter: brightness(1);

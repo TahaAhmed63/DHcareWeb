@@ -5,14 +5,14 @@ import { Link } from 'react-router-dom';
 import { gsap } from 'gsap';
 import logo1 from "./../../assest/cropped-dhcare-logo-trans-75-1-1.png"
 import logo2 from "./../../assest/dhcare-logo-trans-white (1).png"
-import RequestACallback from './RequestACallback';
+// import RequestACallback from './RequestACallback';
 import Enroll from './Enroll';
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
-  const [showModal, setShowModal] = useState(false); // Manage modal state in parent component
+  // const [showModal, setShowModal] = useState(false); // Manage modal state in parent component
   const [showModal2, setShowModal2] = useState(false); // Manage modal state in parent component
-console.log(showModal)
+// console.log(showModal)
   useEffect(() => {
     const threshold = window.innerHeight * 1.2; // This is the threshold at which header becomes sticky
     const offset = 50; // Offset to reduce flickering, only change sticky state after passing offset
@@ -90,7 +90,7 @@ console.log(showModal)
         
           <div className="col-4 col-md-4 d-flex justify-content-end gap-2 mb-none">
             <Link  className="head-btn popmake-272 pum-trigger" style={{ cursor: 'pointer' }}  onClick={() => setShowModal2(!showModal2)}>Enroll Now</Link>
-            <Link className="head-btn popmake-278 pum-trigger" style={{ cursor: 'pointer' }} onClick={() => setShowModal(!showModal)}>Request A Callback</Link>
+            {/* <Link className="head-btn popmake-278 pum-trigger" style={{ cursor: 'pointer' }} onClick={() => setShowModal(!showModal)}>Request A Callback</Link> */}
           </div>
         </div>
 
@@ -110,7 +110,7 @@ console.log(showModal)
             </div>
           </div>
 
-          <div className="col-7 col-md-8 col-lg-7 d-flex justify-content-center mb-flex-end    align-items-end mb-0 mb-padding-set">
+          <div className="col-7 col-md-8 col-lg-7 d-flex justify-content-center mb-flex-end    align-items-end mb-0 ">
             <button
               className="mobile-menu-toggle"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -155,16 +155,8 @@ console.log(showModal)
           </div>
           <div className="col-12 col-md-12 d-flex w-100 justify-content-center gap-2 ">
 
-          <Link 
-  className="head-btn popmake-278 pum-trigger" 
-  style={{ cursor: 'pointer' }} 
-  onClick={() => {
-    setShowModal(!showModal);
-    setIsMobileMenuOpen(!isMobileMenuOpen);
-  }}
->
-  Request A Callback
-</Link>          </div>
+        
+ </div>
                     </li>
                   </ul>
           
@@ -175,7 +167,7 @@ console.log(showModal)
 
 
               
-              <RequestACallback  getfunc={showModal} functionmodalclose={()=>setShowModal(false)} />
+           
           <Enroll   getfunc2={showModal2} functionmodalclose2={()=>setShowModal2(false)}/>
             </div>
           </div>

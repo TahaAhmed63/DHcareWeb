@@ -5,7 +5,7 @@ const ServicesSec2 = () => {
 
   return (
     <>
-<ServicesSec1Design rightimg={img1} head={'We are here to help when you need us'} listPoint={['On call 24/7 for client needs','Flexible and fast scheduling','Regular quality assurance','Thorough care management and family support','Double the care team staff of other agencies']} />
+<ServicesSec1Design alignItem={'right'} rightimg={img1} head={'We are here to help when you need us'} listPoint={['On call 24/7 for client needs','Flexible and fast scheduling','Regular quality assurance','Thorough care management and family support','Double the care team staff of other agencies']} />
 
 </>
   )

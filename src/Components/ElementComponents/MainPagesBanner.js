@@ -21,7 +21,7 @@ const {bgimage,pagetitle}=props
     top: 0;
     background: url(https://dhcare.youronlineconversation.com/wp-content/uploads/2024/08/Ellipse-6.webp);
     width: 100%;
-    height: 255px;
+height: 246px;
     left: 1px;
     background-repeat: no-repeat;
     z-index: -1;

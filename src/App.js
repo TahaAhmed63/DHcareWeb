@@ -17,6 +17,9 @@ import Header from './Components/ElementComponents/Header';
 import Footer from './Components/ElementComponents/Footer';
 import Cursor from './Components/ElementComponents/Cursor';
 import { useLayoutEffect } from 'react';
+import ClockInOutEvv from './pages/ClockInOutEvv';
+import ElderAbuse from './pages/ElderAbuse';
+import ElderlyVacine from './pages/ElderlyVacine';
 
 function App() {
   useLayoutEffect(() => {
@@ -34,6 +37,9 @@ function App() {
         <Route path="/faqs" element={<Faqs />} />
         <Route path="/blogs" element={<Blog />} />
         <Route path="/contact-us" element={<ContactUs />} />
+        <Route path="/clock-in-out-instructions" element={<ClockInOutEvv />} />
+        <Route path="/elderly-abuse" element={<ElderAbuse />} />
+        <Route path="/elderly-vacine" element={<ElderlyVacine />} />
       </Routes>
       <Footer />
     </div>

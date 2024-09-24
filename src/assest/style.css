@@ -47,6 +47,9 @@ body {
 p{
     font-size:17px;
 }
+.cursor{
+    display:none !important;
+}
 h3{
     font-size:23px;
 }
@@ -88,7 +91,7 @@ body{
 }
 .App {
     width: 100%;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 /* Header */
 .scroll-none{
@@ -433,7 +436,7 @@ color:#000;
     transition: 0.8s linear;
 }
 #site-navigation .mega-menu-link:hover {
-    color: #41294a;
+    color: #703487;
     transition: .8s linear;
 }
 .socail-icons-wrap a:hover  i{
@@ -1087,6 +1090,76 @@ ul {
     border-bottom-left-radius: 100%;
     background-size: cover !important;
 }
+
+/* resourcepafe */
+
+
+.c-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 60px 33px;
+    position: relative;
+    background-color: #fff;
+    border-radius: 40px;
+    box-shadow: 0 20px 40px rgba(56, 75, 116, 0.1);
+    transition: 0.5s;
+    min-height: 440.5px;
+}
+.c-card.text-center.same-bx {
+    height: 340px;
+}
+.c-card p,.c-card li{
+    font-size: 15px;
+    font-weight: 600;
+}
+.c-card.text-center::after {
+    background: #97b770;
+    content: '';
+    width: 74px;
+    height: 53px;
+    left: 0;
+    font-size: 21px;
+    padding: 18px;
+    border-bottom-right-radius: 59px;
+    top: 0px;
+    position: absolute;
+    color: #fff;
+    font-weight: 600;
+}
+.c-card__body {
+    margin-bottom: 30px;
+    flex-grow: 1;
+}
+.c-card__title {
+    margin-bottom: 15px;
+
+    font-size: 2.1875rem;
+    line-height: 1.4285714286;
+    font-weight: 900;
+    color: #102347;
+}
+.c-button {
+    display: inline-block;
+    min-width: 196px;
+    padding: 13px 10px 14px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    border-radius: 30px;
+    border: 1px solid #97b770;
+    font-size: 1.125rem;
+    line-height: 1.4444444444;
+    font-weight: 600;
+    color: #41294a;
+    text-align: center;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    transition: 0.2s;
+}
+.c-button--secondary {
+    background-color: #97b770;
+    color: #fff;
+}
 @keyframes heartbeat {
     0%, 100% {
         transform: scale(1);
@@ -1161,8 +1234,42 @@ ul {
     flex-direction: row-reverse;
     background-size: 100% 100% !important;
 }
-/* single-page-css */
+.text-wraper{
+    background: #41294a;
+    margin-top: -87px;
+    padding: 25px;
+    color: #fff;
+}
+.bx-wrap-vacine h2 {
+    color: #97b770;
+    font-size: 23px;
+}
+.bx-wrap-vacine {
+    padding: 13px;
+    background: #41294a;
+    border-radius: 22px;
+    color: #ffff;
+    text-align: center;
+}
 
+.heart-list a {
+    color: #41294a;
+    font-weight: 600;
+}
+/* single-page-css */
+/* elderlypage */
+.additional-page-img.leftimg img {
+    border-radius: 20px;
+    border-bottom: 15px solid #97b770;
+    border-right: 15px solid;
+}
+
+.additional-page-img.rightimg img {
+    border-radius: 20px;
+    border-bottom: 15px solid #97b770;
+    border-left: 15px solid;
+}
+/*elderlypag  */
 /*Dekstop Responsice*/
 @media (min-width: 1500px) and (max-width: 2000px){
     #mega-menu-wrap-menu-1 #mega-menu-menu-1 {
@@ -1462,6 +1569,17 @@ a.mega-menu-link {
         padding-left: 0px !important;
         padding-right: 0px !important;
         }
+        section.toppageheader.max-limit.services-page {
+            margin-top: -152px !important;
+            margin-bottom: 46px !important;
+        }
+        section.toppageheader.max-limit{
+            margin-bottom: 40px !important;
+            margin-top: -40px !important;
+        }
+        .site-header {
+            padding: 14px 26px;
+        }
 }
 @media screen and (min-width: 2000px)
 {
@@ -1553,7 +1671,7 @@ top:-10px !important;
     }
     .App {
         width: 100%;
-        overflow: hidden;
+        /* overflow: hidden; */
     }
     .banner-container {
         height: 100%  !important;

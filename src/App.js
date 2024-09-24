@@ -22,11 +22,7 @@ import ElderAbuse from './pages/ElderAbuse';
 import ElderlyVacine from './pages/ElderlyVacine';
 
 function App() {
-  useEffect(() => { 
-    console.log("hell")
-      // window.onload = ()=> window.scrollTo(0,0)
-      window.history.scrollRestoration ="manual"
-  }, []);
+
   return (
     <div className="App">
 

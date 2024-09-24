@@ -216,7 +216,7 @@ const Header = () => {
     right: 0;
     overflow-y: scroll;
     width: 100%;
-    height: 100vh;
+     height: 100%;
     background-color: #fff;
     transform: translateX(100%);
 }

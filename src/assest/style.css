@@ -1295,7 +1295,11 @@ ul {
         font-size: 14px;
         text-decoration: none;
     }
-
+    .banner-text {
+       
+        top: 31%;
+       
+    }
     .banner-container img {
         filter: brightness(1);
         transition: filter 0.5s ease-in-out;

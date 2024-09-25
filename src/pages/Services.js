@@ -20,10 +20,11 @@ const Services = () => {
 
 <ServicesSec1/>
 <ServicesSec2/>
+<div style={{overflowX:'hidden'}}>
 <ServicesSec3/>
 <ServicesSec4/>
 <ServicesSec5/>
-
+</div>
 
 
 </>

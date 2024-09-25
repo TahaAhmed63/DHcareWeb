@@ -45,32 +45,6 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-      <script>
-// Detect orientation change or resize event
-window.addEventListener('resize', () => {
-    // Force a repaint or reflow to ensure the new styles are applied
-    document.body.style.display = 'none';
-    document.body.offsetHeight; // Trigger reflow
-    document.body.style.display = '';
-});
-window.addEventListener('orientationchange', () => {
-    // Force reflow
-    document.body.style.display = 'none';
-    document.body.offsetHeight; // Trigger reflow
-    document.body.style.display = '';
-});
-const setVh = () => {
-  const vh = window.innerHeight * 0.01;
-  document.documentElement.style.setProperty('--vh', `${vh}px`);
-};
 
-// Initial calculation
-setVh();
-
-// Recalculate on resize/orientation change
-window.addEventListener('resize', setVh);
-
-
-      </script>
   </body>
 </html>

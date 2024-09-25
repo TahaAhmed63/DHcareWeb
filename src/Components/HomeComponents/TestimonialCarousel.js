@@ -33,13 +33,10 @@ const TestimonialCarousel = () => {
       slidesPerView={1}
       
       autoplay={{ delay: 2500, disableOnInteraction: false }} // Adds autoplay functionality
-      navigation // Enables navigation arrows
+      navigation={true} // Enables navigation arrows
     //   effect="coverflow" // Optional: Adds a coverflow effect
       modules={[Autoplay, Navigation]}
-      breakpoints={{
-        640: {  navigation:false },
-      
-      }}
+    
     className='testimonial-carousel'
     >
 

@@ -11,7 +11,7 @@ const MainServicesDesign = (props) => {
     const textRef = useRef(null);
     useLayoutEffect(() => {
         if (imgRef.current && textRef.current) {
-          const imgAnimation = gsap.to(imgRef.current, {
+   gsap.to(imgRef.current, {
             x: 0,
             duration: 1.5,
             ease: 'power2.inOut',
@@ -23,7 +23,7 @@ const MainServicesDesign = (props) => {
             },
           });
       
-          const textAnimation = gsap.to(textRef.current, {
+        gsap.to(textRef.current, {
             y: 0,
             duration: 1,
             ease: 'power2.inOut',
@@ -34,16 +34,9 @@ const MainServicesDesign = (props) => {
               toggleActions: 'play reverse play reverse',
             },
           });
+     
       
-          // Refresh ScrollTrigger to ensure proper calculation
-          ScrollTrigger.refresh();
-      
-          return () => {
-            // Kill specific ScrollTrigger instances for cleanup
-            imgAnimation.scrollTrigger.kill();
-            textAnimation.scrollTrigger.kill();
-            gsap.kill(); // Kill all animations
-          };
+        
         }
       }, [imagealignment]);
 

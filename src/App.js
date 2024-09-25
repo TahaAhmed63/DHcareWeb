@@ -16,7 +16,7 @@ import ContactUs from './pages/ContactUs';
 import Header from './Components/ElementComponents/Header';
 import Footer from './Components/ElementComponents/Footer';
 // import Cursor from './Components/ElementComponents/Cursor';
-import { useEffect } from 'react';
+// import { useEffect } from 'react';
 import ClockInOutEvv from './pages/ClockInOutEvv';
 import ElderAbuse from './pages/ElderAbuse';
 import ElderlyVacine from './pages/ElderlyVacine';

@@ -44,6 +44,7 @@ const ServicesSec3 = () => {
                 image={data.image}
                 index={index}
                 imagealignment={data.imagealignment}
+                style={{overflowX:'hidden'}}
               />
             ))
         }

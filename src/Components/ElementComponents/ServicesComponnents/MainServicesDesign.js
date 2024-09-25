@@ -9,47 +9,43 @@ const MainServicesDesign = (props) => {
     const { bgColor, heading, headingcolor, paragrah, image, imagealignment, index } = props
     const imgRef = useRef(null);
     const textRef = useRef(null);
-
     useLayoutEffect(() => {
         if (imgRef.current && textRef.current) {
-            // Set initial positions
-            imgRef.current.style.transform = imagealignment === 'right' ? 'translateX(100%)' : 'translateX(-100%)';
-
-            // Create the ScrollTrigger animations
-            const imgAnimation = gsap.to(imgRef.current, {
-                x: 0, // Animate to original position
-                duration: 1.5,
-                ease: 'power2.inOut',
-                scrollTrigger: {
-                    trigger: imgRef.current,
-                    start: 'top 80%',
-                    end: 'bottom 20%',
-                    toggleActions: 'play reverse play reverse', // Play every time the element enters/leaves view
-                },
-            });
-
-            const textAnimation = gsap.to(textRef.current, {
-                y: 0, // Animate to original position
-                duration: 1,
-                ease: 'power2.inOut',
-                scrollTrigger: {
-                    trigger: textRef.current,
-                    start: 'top 80%',
-                    end: 'bottom 20%',
-                    toggleActions: 'play reverse play reverse', // Play every time the element enters/leaves view
-                },
-            });
-
-            // Refresh ScrollTrigger to ensure proper calculation
-            ScrollTrigger.refresh();
-
-            return () => {
-                // Kill specific ScrollTrigger instances for cleanup
-                imgAnimation.scrollTrigger.kill();
-                textAnimation.scrollTrigger.kill();
-            };
+          const imgAnimation = gsap.to(imgRef.current, {
+            x: 0,
+            duration: 1.5,
+            ease: 'power2.inOut',
+            scrollTrigger: {
+              trigger: imgRef.current,
+              start: 'top 80%',
+              end: 'bottom 20%',
+              toggleActions: 'play reverse play reverse',
+            },
+          });
+      
+          const textAnimation = gsap.to(textRef.current, {
+            y: 0,
+            duration: 1,
+            ease: 'power2.inOut',
+            scrollTrigger: {
+              trigger: textRef.current,
+              start: 'top 80%',
+              end: 'bottom 20%',
+              toggleActions: 'play reverse play reverse',
+            },
+          });
+      
+          // Refresh ScrollTrigger to ensure proper calculation
+          ScrollTrigger.refresh();
+      
+          return () => {
+            // Kill specific ScrollTrigger instances for cleanup
+            imgAnimation.scrollTrigger.kill();
+            textAnimation.scrollTrigger.kill();
+            gsap.kill(); // Kill all animations
+          };
         }
-    }, [imagealignment]); 
+      }, [imagealignment]);
 
     return (
         <section className="single-page-bg-1 mb-flex-reverse max-limit" style={{ background: bgColor, marginTop: '100px', marginBottom: '100px', position: 'relative' }}>

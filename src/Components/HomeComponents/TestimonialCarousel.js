@@ -4,7 +4,6 @@ import {  Autoplay, Navigation } from 'swiper/modules';
 import 'swiper/css'; // Import Swiper styles
 import 'swiper/css/effect-fade';
 import 'swiper/css/navigation';
-import 'swiper/css/effect-coverflow';
 import personimg from "./../../assest/New-Project-39.webp";
 import { Link } from 'react-router-dom';
 

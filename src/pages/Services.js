@@ -17,12 +17,14 @@ const Services = () => {
         <meta name="description" content="this are the dhcare Services" />
       </Helmet>
 
-
+<div style={{overflowX:'hidden'}}>
 <ServicesSec1/>
 <ServicesSec2/>
 <ServicesSec3/>
 <ServicesSec4/>
 <ServicesSec5/>
+</div>
+
 
 </>
   )

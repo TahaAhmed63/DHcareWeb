@@ -15,7 +15,7 @@ const MainServicesDesign = (props) => {
     if (imgRef.current && textRef.current) {
       // Set the initial x position based on image alignment
       const imgStartX = imagealignment === 'right' ? 300 :-300 ;
-      ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
+
       // Animate the image (slide from off-screen to its final position)
       gsap.from(imgRef.current, {
         x: imgStartX, // Dynamic based on alignment

@@ -10,10 +10,12 @@ const MainServicesDesign = (props) => {
   const textRef = useRef(null);
 
   useEffect(() => {
+    const isMobile = window.innerWidth <= 768;
+
     if (imgRef.current && textRef.current) {
       // Set the initial x position based on image alignment
       const imgStartX = imagealignment === 'right' ? 300 :-300 ;
-
+      ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
       // Animate the image (slide from off-screen to its final position)
       gsap.from(imgRef.current, {
         x: imgStartX, // Dynamic based on alignment
@@ -21,8 +23,8 @@ const MainServicesDesign = (props) => {
         ease: 'power2.inOut',
         scrollTrigger: {
           trigger: imgRef.current,
-          start: 'top 80%',
-          end: 'bottom 20%',
+          start: isMobile ? 'top 90%' : 'top 80%', // Different trigger points for mobile
+          end: isMobile ? 'bottom 10%' : 'bottom 20%', // Adjusted for mobile
           toggleActions: 'play reverse play reverse',
         },
       });

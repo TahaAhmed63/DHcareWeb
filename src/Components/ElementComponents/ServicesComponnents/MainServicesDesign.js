@@ -25,7 +25,7 @@ const MainServicesDesign = (props) => {
           trigger: imgRef.current,
           start: isMobile ? 'top 90%' : 'top 80%', // Different trigger points for mobile
           end: isMobile ? 'bottom 10%' : 'bottom 20%', // Adjusted for mobile
-          toggleActions: 'play reverse play reverse',
+          toggleActions: 'play none none none', // Run once, no reverse or replay
         },
       });
 

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import MainPagesBanner from '../Components/ElementComponents/MainPagesBanner'
 import bgimage from "./../assest/image-34.webp";
 
@@ -8,6 +8,9 @@ import SocialSection from '../Components/ElementComponents/SocailSection';
 import { Helmet } from 'react-helmet-async';
 
 const ContactUs = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   const [formData, setFormData] = useState({
     name: '',
     email: '',

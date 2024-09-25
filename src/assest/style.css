@@ -1256,9 +1256,13 @@ ul {
     background: #41294a;
     border-radius: 22px;
     color: #ffff;
+    display: flex;
+    height: 426px;
     text-align: center;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
 }
-
 .heart-list a {
     color: #41294a;
     font-weight: 600;
@@ -1708,6 +1712,13 @@ a.mega-menu-link {
         margin: 0 auto !important;
         padding-left: 0px !important;
         padding-right: 0px !important;
+    }
+    .text-wraper.max-limit {
+        background: #41294a;
+        margin-top: -40px !important;
+        padding: 25px 0px;
+        color: #fff;
+        margin-bottom: 20px !important;
     }
     .max-limits {
         left: -12px !important;

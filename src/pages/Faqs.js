@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import MainPagesBanner from '../Components/ElementComponents/MainPagesBanner';
 import bgimage from "./../assest/image-34.webp";
 import { Accordion, Card, Col, Row, useAccordionButton } from 'react-bootstrap';
@@ -8,6 +8,7 @@ import leftimg from "./../assest/caring-585x390-1.jpg"
 import { Helmet } from 'react-helmet-async';
 // Custom Toggle component for Accordion
 const CustomToggle = ({ children, eventKey, activeKey, onToggle }) => {
+  
   const decoratedOnClick = useAccordionButton(eventKey, () => onToggle(eventKey));
 
   return (
@@ -26,7 +27,9 @@ const Faqs = () => {
   const toggleAccordion = (eventKey) => {
     setActiveKey(activeKey === eventKey ? null : eventKey);
   };
-
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   const faqData = [
     {
       question: 'What is CDPAP/Home Care?',

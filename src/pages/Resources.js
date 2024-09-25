@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import MainPagesBanner from '../Components/ElementComponents/MainPagesBanner';
 import bgimage from "./../assest/image-34.webp";
 import { Link } from 'react-router-dom';
 
 const Resources = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
     const resourceData = [
         {
             title: "Elder abuse",

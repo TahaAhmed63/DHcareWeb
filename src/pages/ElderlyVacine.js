@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import bgimage from "./../assest/image-34.webp";
 import { Helmet } from 'react-helmet-async';
 import MainPagesBanner from '../Components/ElementComponents/MainPagesBanner';
@@ -34,17 +34,19 @@ const ElderlyVacine = () => {
             link: "https://www.health.ny.gov/prevention/immunization/providers/state_vaccines_for_adults_program.htm",
         }
     ];
-
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
     return (
-        <div>
+        <div className='max-limit'>
             <Helmet>
                 <title>Elderly Vaccine</title>
                 <meta name="description" content="Frequently Asked Questions" />
             </Helmet>
             <MainPagesBanner bgimage={bgimage} pagetitle={'Elderly Vaccine'} />
-            <div className="row mb-3 text-wraper">
+            <div className="row mb-3 text-wraper max-limit ">
                 <div className="col-12">
-                    <div className="text-wrap d-flex justify-content-center w-75 mx-auto">
+                    <div className="text-wrap d-flex justify-content-center w-75 mx-auto ">
                         <strong className='text-center'>
                             Vaccination is crucial for older adults to prevent serious diseases and complications. As people age, their immune systems weaken, making them more susceptible to infections and diseases.
                             Centers for Disease Control and Prevention (CDC) - Vaccines for Adults
@@ -53,7 +55,7 @@ const ElderlyVacine = () => {
                 </div>
             </div>
             
-            <div className="container">
+            <div className="container my-4">
                 <div className="row d-flex justify-content-center gy-5">
                     {
                         vaccineData.map((vaccine, index) => (

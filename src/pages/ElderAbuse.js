@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import MainPagesBanner from '../Components/ElementComponents/MainPagesBanner'
 import bgimage from "./../assest/image-34.webp";
 import { Helmet } from 'react-helmet-async';
@@ -7,6 +7,9 @@ import img1 from "./../assest/elderly.webp"
 import ResourcesSec1 from '../Components/ElementComponents/ResourceComponent/ResourseSec1';
 
 const ElderAbuse = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
   return (
 <>
 <Helmet>
@@ -15,7 +18,7 @@ const ElderAbuse = () => {
             </Helmet>
             <MainPagesBanner bgimage={bgimage} pagetitle={'Elder abuse'} />
 
-        <div className="row mb-3 text-wraper">
+        <div className="row mb-3 text-wraper max-limit">
             <div className="col-12">
                 <div className="text-wrap d-flex justify-content-center w-75 mx-auto">
                 <strong className='text-center'>Elder abuse refers to the mistreatment of older adults, including physical, emotional, sexual abuse, financial exploitation, and neglect. It can occur in various settings, including homes, nursing facilities, and assisted living communities.

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 import BannerSlide from '../Components/BannerSlide'
 import FormHome from '../Components/FormHome'
@@ -7,12 +7,19 @@ import Section2 from '../Components/Section2'
 import Section3 from '../Components/Section3'
 import Section4 from '../Components/Section4'
 import Section5 from '../Components/Section5'
+import { Helmet } from 'react-helmet-async'
 
 
 const Home = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
   <div className='max-limit'>
-
+ <Helmet>
+        <title>DHCare</title>
+        <meta name="description" content="Frequently Answer Question" />
+      </Helmet>
   <BannerSlide/>
   <FormHome/>
   <MyMapComponent/>

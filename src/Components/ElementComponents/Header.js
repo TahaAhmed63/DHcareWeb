@@ -175,12 +175,13 @@ const Header = () => {
       </div>
 
       <style jsx>{`
-       .sticky {
-          position: sticky;
-          top: 0;
-          background-color: rgb(151, 183, 112);
-          box-shadow: 0px 0px 50px #b7adad;
-        }
+    .sticky {
+    position: sticky;
+    top: 0;
+    background-color: rgb(151, 183, 112);
+    box-shadow: 0px 0px 50px #b7adad;
+    transition: 0.8s ease;
+}
      a.custom-logo-link.bg-design-logo-mb {
     width: 100%;
     border-radius: 0;

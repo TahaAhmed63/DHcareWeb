@@ -56,7 +56,7 @@ const Header = () => {
 
 
   const socialLinks = [
-    { href: 'tel:(758) 459-0180', iconClass: 'fa-solid fa-square-phone', label: '(758) 459-0180' },
+    // { href: 'tel:(758) 459-0180', iconClass: 'fa-solid fa-square-phone', label: '(758) 459-0180' },
     { href: 'https://www.facebook.com/DHCareNY/', iconClass: 'fa-brands fa-square-facebook' },
     { href: 'https://www.linkedin.com/company/dhcare-ny-llc', iconClass: 'fa-brands fa-linkedin' },
     { href: 'https://twitter.com/NyDhcare', iconClass: 'fa-brands fa-square-x-twitter' },
@@ -76,9 +76,10 @@ const Header = () => {
     <header id="masthead" className={`site-header max-limit ${isSticky ? 'sticky logo-bg-remove' : ''}`}>
       <div className="container-fluid">
         <div className={`row align-items-center first-row  ${isSticky ? 'scroll-none' : ''}`}>
-          <div className="col-12 col-sm-8 col-lg-8 col-md-8 d-flex justify-content-end gap-2">
+          <div className="col-12 col-sm-12 col-lg-12 col-md-12 d-flex justify-content-end gap-2">
    
               <div className="d-flex gap-3 social-icons-wrap align-items-center">
+              <p class="socail-hide mb-0 px-1"><i class="fa-solid fa-square-phone"></i> (758) 459-0180</p>
                 {socialLinks.map((link, index) => (
                   <a key={index} href={link.href} target="_blank" rel="noopener noreferrer" className={`${index ===0 ?`det-open ` : 'mb-none'} `}>
                     <i className={link.iconClass}></i>
@@ -88,10 +89,7 @@ const Header = () => {
               </div>
             </div>
         
-          <div className="col-4 col-md-4 d-flex justify-content-end gap-2 mb-none">
-            <Link  className="head-btn popmake-272 pum-trigger" style={{ cursor: 'pointer' }}  onClick={() => setShowModal2(!showModal2)}>Enroll Now</Link>
-            {/* <Link className="head-btn popmake-278 pum-trigger" style={{ cursor: 'pointer' }} onClick={() => setShowModal(!showModal)}>Request A Callback</Link> */}
-          </div>
+        
         </div>
 
         <div className="row align-items-center second-row">
@@ -120,11 +118,20 @@ const Header = () => {
             </button>
             <nav id="site-navigation" className={`main-navigation ${isMobileMenuOpen ? 'is-open' : ''}`}>
               <ul className="d-flex  flex-lg-row menu-item-wrap mb-0">
+              <Link  className="head-btn popmake-272 pum-trigger" style={{ cursor: 'pointer',background: "#41294a",
+  borderRadius: "10px",
+  color: "#fff",
+  fontSize: "14px",
+  padding: "9px 10px",
+  textDecoration: "none"  }}  onClick={() => setShowModal2(!showModal2)}>Enroll Now</Link>
                 {navItems.map((item, index) => (
                   <li key={index}>
                     <Link className='mega-menu-link' to={item.to} onClick={() => setIsMobileMenuOpen(false)} >{item.label}</Link>
                   </li>
                 ))}
+              
+           
+
               </ul>
             </nav>
             <div className={`${isMobileMenuOpen ? 'mobile-menu open' : 'mobile-menu'}`}>
@@ -148,7 +155,12 @@ const Header = () => {
                     <li>
           
                     <div className="col-12 col-md-12 w-100 d-flex justify-content-center gap-2">
-            <Link  className="head-btn popmake-272 pum-trigger" style={{ cursor: 'pointer' }}  onClick={() => {
+            <Link  className="head-btn popmake-272 pum-trigger" style={{ cursor: 'pointer',background: "#41294a",
+  borderRadius: "10px",
+  color: "#fff",
+  fontSize: "14px",
+  padding: "5px 10px",
+  textDecoration: "none" }}  onClick={() => {
     setShowModal2(!showModal2);
     setIsMobileMenuOpen(!isMobileMenuOpen);
   }}>Enroll Now</Link>
